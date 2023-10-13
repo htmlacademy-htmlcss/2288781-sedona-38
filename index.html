@@ -47,9 +47,11 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-item-quote" href="catalog.html">
-              <button class="navigation-item-button" type="button">
-                <span>Хочу сюда</span>
-              </button>
+              <form>
+                <button class="navigation-item-button" type="button">
+                  <span>Хочу сюда</span>
+                </button>
+              </form>
             </a>
           </li>
         </ul>
@@ -91,10 +93,11 @@
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <!-- Подзаголовок основного смысла -->
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="advantages-reasons">
+          <h3 class="advantages-title visually-hidden">Причины</h3>
+          <!-- Подзаголовок причин (невидимый) -->
           <ul class="advantages-list">
             <!-- Список причин -->
-            <h3 class="advantages-list-title visually-hidden">Причины</h3>
-              <!-- Подзаголовок причин (невидимый) -->
             <li class="advantages-item">
               <img class="advantages-square" src="#" alt="Фон голубого цвета">
               <!-- Фон - прямоугольник голубого цвета -->
@@ -132,15 +135,17 @@
               <img class="advantages-square" src="#" alt="Фон голубого цвета">
             </li>
           </ul>
+        </div>
       </section>
       <section class="services">
         <!-- Секция "Услуги" -->
         <h2 class="services-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
         <!-- Основной смысл преимуществ города Седоны -->
         <p class="text">Опытный персонал и качественное обслуживание!</p>
-        <ul class="services-list">
-          <h3 class="services-subtitle visually-hidden">Преимущества города Седоны</h3>
+        <div>
+          <h3 class="services-subtitle visually-hidden">Преимущества города Седоны</h3>↩
           <!-- Подзаголовок преимуществ города Седоны (невидимый) -->
+          <ul class="services-list">
             <li class="services-item">
               <img class="services-icon" src="#" alt="Графика - дом">
               <h4 class="services-title">Жильё</h4>
@@ -159,14 +164,17 @@
               <!-- Подзаголовок третьего преимущества -->
               <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </li>
-        </ul>
+          </ul>
+        </div>
         <div class="interest">
           <h2 class="interest-title">Заинтересовались?</h2>
           <p class="text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="interest-button">
-            <button class="interest-button-quote" type="button">
-              <span href="catalog.html">Поиск гостиницы в Седоне</span>
-            </button>
+            <form>
+              <button class="interest-button-quote" type="button" href="catalog.html">
+                <span>Поиск гостиницы в Седоне</span>
+              </button>
+            </form>
           </a>
         </div>
       </section>

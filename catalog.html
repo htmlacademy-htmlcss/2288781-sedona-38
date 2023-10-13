@@ -1,76 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
-
     <meta charset="utf-8">
     <title>HTML Academy: Седона - разработчик Арефьева Оксана - каталог гостиниц в городе Седоны</title>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </head>
-
-  <body>
-
-    <header class="page-header">
-      <!-- Шапка -->
-
-      <h1 class="page-header-title visually-hidden">Каталог гостиниц в городе Седоны</h1>
-        <!-- Заголовок главной страницы (невидимый) -->
-
-      <nav class="navigation">
-        <!-- Меню навигации -->
-
-        <ul class="navigation-list">
-          <!-- Список первой части меню -->
-
-          <li class="navigation-item">
-            <img class="navigation-link navigation-link-logo" href="index.html" src="#" alt="Рисунок логотипа Седоны">
-            <!-- Основной логотип города Седоны-->
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="about.html">О Седоне</a>
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-
-        </ul>
-
-        <ul class="navigation-list">
-          <!-- Список второй части меню -->
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-            <!-- Открытие модального окна через Поиск -->
-              <img class="navigation-link navigation-link-icon" src="#" alt="Иконка - поиск">
-            </a>
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <img class="navigation-link navigation-link-icon"  src="#" alt="Иконка - корзина">
-            </a>
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-item-button" href="catalog.html">
-              <button type="button">
-                <span>Хочу сюда</span>
-              </button>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-    </header>
+      <p>
+        Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».
+      </p>
+      <base href="https://www.figma.com/file/tfOIExse2mRkDxCNjaAxnm/HTML-1-%2F-Седона-(38)?node-id=0%3A1&mode=dev">
+    </head>
+    <body>
+      <header class="page-header">
+        <!-- Шапка -->
+        <h1 class="page-header-title visually-hidden">Официальный сайт города Седоны</h1>
+          <!-- Заголовок главной страницы (невидимый) -->
+        <nav class="navigation">
+          <!-- Меню навигации -->
+          <ul class="navigation-list">
+            <!-- Список первой части меню -->
+            <li class="navigation-item">
+              <img class="navigation-link navigation-link-logo" href="index.html" src="#" alt="Рисунок логотипа Седоны">
+              <!-- Основной логотип города Седоны-->
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <!-- Список второй части меню -->
+            <li class="navigation-item">
+              <a class="navigation-link-quote" href="#">
+              <!-- Открытие модального окна через Поиск -->
+                <img class="navigation-link-img navigation-link-icon" src="#" alt="Иконка - поиск">
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link-quote" href="#">
+                <img class="navigation-link-img navigation-link-icon"  src="#" alt="Иконка - корзина">
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-item-quote" href="catalog.html">
+                <button class="navigation-item-button" type="button">
+                  <span>Хочу сюда</span>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
     <main class="main-inner">
       <!-- Основное содержимое каталога -->
@@ -452,51 +435,38 @@
 
     <footer class="page-footer">
       <!-- Подвал главной страницы -->
-
       <nav class="page-footer-contacts">
         <!-- Меню навигации в подвале -->
-
         <ul class="footer-social-list">
         <!-- Список меню в подвале -->
-
         <li class="footer-social-item">
           <a href="https://vk.com/htmlacademy" type="button">
             <span>Vkontakte</span>
           </a>
         </li>
-
         <li class="footer-social-item">
           <a href="https://t.me/htmlacademy" type="button">
             <span>Telegram</span>
           </a>
         </li>
-
         <li class="footer-social-item">
           <a href="https://www.youtube.com/user/htmlacademyru" type="button">
             <span>Youtube</span>
           </a>
         </li>
-
           <li class="footer-social-item">
             <a href="tel:+7(812)812-12-12">
               <span>+7(812)812-12-12</span>
             </a>
           </li>
-
           <li class="footer-social-item">
             <a href="https://htmlacademy.ru/">
               <img src="#">
-              <span>Логотип .html academy</span>
+              <span>Логотип HTML academy</span>
             </a>
-
           </li>
-
         </ul>
-
       </nav>
-
     </footer>
-
   </body>
-
 </html>
