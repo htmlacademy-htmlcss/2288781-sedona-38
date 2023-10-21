@@ -7,52 +7,52 @@
 </head>
   <body>
     <header class="page-header">
-      <!-- Шапка главной страницы -->
-        <h1 class="page-header-title visually-hidden">База данных гостиниц Седона</h1>
-        <!-- Заголовок главной страницы (невидимый) -->
+    <!-- Шапка главной страницы -->
+      <h1 class="page-header-title visually-hidden">База данных гостиниц Седона</h1>
+      <!-- Заголовок главной страницы (невидимый) -->
         <nav class="navigation">
         <!-- Меню навигации -->
-          <ul class="navigation-list">
-          <!-- Список первой части меню -->
-            <li class="navigation-item">
-              <img class="navigation-link navigation-link-logo" href="index.html" src="images/logo/brand-sedona.png" alt="Рисунок логотипа Седоны">
-              <!-- Основной логотип города Седоны-->
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="about.html">О Седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link navigation-list-current" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="navigation-list2">
-          <!-- Список второй части меню -->
-            <li class="navigation-list2-item">
-              <a class="navigation-list2-link-quote" href="#">
-              <!-- Открытие модального окна через Поиск -->
-                <img class="navigation-list2-link-img navigation-list2-link-icon" src="images/icons/search.png" alt="Иконка - поиск">
-              </a>
-            </li>
-            <li class="navigation-list2-item">
-              <a class="navigation-list2-link-quote" href="#">
-                <img class="navigation-list2-link-img navigation-list2-link-icon"  src="images/icons/heart.png" alt="Иконка - корзина">
-              </a>
-            </li>
-            <li class="navigation-list2-item">
-              <a class="navigation-list2-item-quote" href="catalog.html">
-                <form class="navigation-list2-item-button">
-                  <button class="navigation-list2-item-quote-button" type="button">
-                    <span>Хочу сюда</span>
-                  </button>
-                </form>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="Бренд логотипа Седоны" src="images/logo/brand-sedona.png" >
+          <!-- Основной логотип города Седоны-->
+        </a>
+        <ul class="navigation-list">
+        <!-- Список первой части меню -->
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list2">
+        <!-- Список второй части меню -->
+          <li class="navigation-list2-item">
+            <a class="navigation-list2-link-quote" href="#">
+            <!-- Открытие модального окна через Поиск -->
+              <img class="navigation-list2-link-img navigation-list2-link-icon" src="images/icons/search.png" alt="Иконка - поиск">
+            </a>
+          </li>
+          <li class="navigation-list2-item">
+            <a class="navigation-list2-link-quote" href="#">
+              <img class="navigation-list2-link-img navigation-list2-link-icon"  src="images/icons/heart.png" alt="Иконка - корзина">
+            </a>
+          </li>
+          <li class="navigation-list2-item">
+            <a class="navigation-list2-item-quote" href="catalog.html">
+              <form class="navigation-list2-item-button">
+                <button class="navigation-list2-item-quote-button" type="button">
+                  <span>Хочу сюда</span>
+                </button>
+              </form>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main-inner">
     <!-- Основное содержимое каталога -->
       <section class="main-inner-header">
@@ -75,7 +75,7 @@
           </ul>
         </form>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <!-- Форма поисковых наборов -->
+        <!-- Форма поисковых наборов -->
           <h2 class="visually-hidden">Поисковые формы</h2>
           <!-- Подзаголовок поисковых наборов (невидимый) -->
           <fieldset class="catalog-filter-infrastructure">
@@ -103,7 +103,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-type-of-housing">
-            <!-- Набор полей типов жилья -->
+          <!-- Набор полей типов жилья -->
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -183,8 +183,12 @@
                   <td class="hotel-card-1-name-price">От 4000 ₽</td>
                 </tr>
                 <tr>
-                  <td class="hotel-card-1-name-button-for button" href="#">Подробнее</td>
-                  <td class="hotel-card-1-name-button-save button" href="#">В избранное</td>
+                  <td class="hotel-card-1-name-button">
+                    <input class="hotel-card-1-more-detailed" type="submit" href="#" value="Подробнее">
+                  </td>
+                  <td>
+                    <input class="hotel-card-1-favourites" type="submit" href="#" value="В избранное">
+                  </td>
                 </tr>
                 <tr>
                   <td class="hotel-card-1-name-stars">
@@ -193,77 +197,107 @@
                     <img src="images/icons/star.png" alt="Третья звезда">
                     <img src="images/icons/star.png" alt="Четвертая звезда">
                   </td>
-                  <td class="hotel-card-1-name-rating">Рейтинг: 8.5</td>
+                  <td class="hotel-card-1-name-rating">
+                    <input class="hotel-card-1-rating" type="submit" value="Рейтинг: 8.5">
+                  </td>
                 </tr>
               </table>
             </a>
           </fieldset>
-
-
-
-        </form>
-
-
-
-          </li>
-          <li class="hotel-card-2">
+          <fieldset class="hotel-card-2">
+          <!-- Вторая карточка -->
             <a class="hotel-card-2-link" href="#">
-              <img class="card-2" src="#" alt="Скалы и звездное небо">
+              <img class="card-2" src="images/catalog-hotels/hotel-2-Villas-at-Poco-Diablo.jpg">
               <h3 class="hotel-card-2-title">Villas at Poco Diablo</h3>
+              <table class="hotel-card-2-name">
+                <tr>
+                  <td class="hotel-card-2-name-type">Гостиница</td>
+                  <td class="hotel-card-2-name-price">От 5000 ₽</td>
+                </tr>
+                <tr>
+                  <td class="hotel-card-2-name-button">
+                    <input class="hotel-card-2-more-detailed" type="submit" href="#" value="Подробнее">
+                  </td>
+                  <td>
+                    <input class="hotel-card-2-favourites" type="submit" href="#" value="В избранное">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hotel-card-2-name-stars">
+                    <img src="images/icons/star.png" alt="Первая звезда">
+                    <img src="images/icons/star.png" alt="Вторая звезда">
+                    <img src="images/icons/star.png" alt="Третья звезда">
+                    <img src="images/icons/star.png" alt="Четвертая звезда">
+                  </td>
+                  <td class="hotel-card-2-name-rating">
+                    <input class="hotel-card-2-rating" type="submit" value="Рейтинг: 9.2">
+                  </td>
+                </tr>
+              </table>
             </a>
-            <div class="hotel-card-2-name">
-              <p class="hotel-card-2-name-type">Гостиница</p>
-              <p class="hotel-card-2-name-price">От 5000 ₽</p>
-              <a class="hotel-card-2-name-button-for button" href="#">Подробнее</a><br>
-              <a class="hotel-card-2-name-button-save button" href="#">В избранное</a>
-            </div>
-            <div class="hotels-rating-stars">
-              <img src="#">
-              <span>Рейтинг звезд - 4</span>
-            </div>
-            <div class="rating-views">
-              <p class="rating-text">Рейтинг: 9.2</p>
-            </div>
-          </li>
-          <li class="hotel-card-3">
+          </fieldset>
+          <fieldset class="hotel-card-3">
+          <!-- Третья карточка -->
             <a class="hotel-card-3-link" href="#">
-              <img class="card-3" src="#" alt="Скалы и звездное небо">
+              <img class="card-3" src="images/catalog-hotels/hotel-3-Desert-Quail-Inn.jpg">
               <h3 class="hotel-card-3-title">Desert Quail Inn</h3>
+              <table class="hotel-card-3-name">
+                <tr>
+                  <td class="hotel-card-3-name-type">Гостиница</td>
+                  <td class="hotel-card-3-name-price">От 2500 ₽</td>
+                </tr>
+                <tr>
+                  <td class="hotel-card-3-name-button">
+                    <input class="hotel-card-3-more-detailed" type="submit" href="#" value="Подробнее">
+                  </td>
+                  <td>
+                    <input class="hotel-card-3-favourites" type="submit" href="#" value="В избранное">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hotel-card-3-name-stars">
+                    <img src="images/icons/star.png" alt="Первая звезда">
+                    <img src="images/icons/star.png" alt="Вторая звезда">
+                    <img src="images/icons/star.png" alt="Третья звезда">
+                  </td>
+                  <td class="hotel-card-3-name-rating">
+                    <input class="hotel-card-3-rating" type="submit" value="Рейтинг: 6.9">
+                  </td>
+                </tr>
+              </table>
             </a>
-            <div class="hotel-card-3-name">
-              <p class="hotel-card-3-name-type">Гостиница</p>
-              <p class="hotel-card-3-name-price">От 2500 ₽</p>
-              <button type="button" class="hotel-card-3-name-button-for-button" href="#">Подробнее</button>
-              <button type="button" class="hotel-card-3-name-button-save-button" href="#">В избранное</button>
-            </div>
-            <div class="hotels-rating-stars">
-              <img src="#">
-              <span>Рейтинг звезд - 3</span>
-            </div>
-            <div class="rating-views">
-              <p class="rating-text">Рейтинг: 6.9</p>
-            </div>
-          </li>
-          <li class="hotel-card-3">
-            <a class="hotel-card-3-link" href="#">
-              <img class="card-3" src="#" alt="Скалы и звездное небо">
-              <h3 class="hotel-card-3-title">GreenTree Inn</h3>
+          </fieldset>
+          <fieldset class="hotel-card-4">
+          <!-- Четвертая карточка -->
+            <a class="hotel-card-4-link" href="#">
+              <img class="card-4" src="images/catalog-hotels/hotel-4-GreenTree-Inn.jpg">
+              <h3 class="hotel-card-4-title">GreenTree Inn</h3>
+              <table class="hotel-card-4-name">
+                <tr>
+                  <td class="hotel-card-4-name-type">Гостиница</td>
+                  <td class="hotel-card-4-name-price">От 1500 ₽</td>
+                </tr>
+                <tr>
+                  <td class="hotel-card-4-name-button">
+                    <input class="hotel-card-4-more-detailed" type="submit" href="#" value="Подробнее">
+                  </td>
+                  <td>
+                    <input class="hotel-card-4-favourites" type="submit" href="#" value="В избранное">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hotel-card-4-name-stars">
+                    <img src="images/icons/star.png" alt="Первая звезда">
+                    <img src="images/icons/star.png" alt="Вторая звезда">
+                  </td>
+                  <td class="hotel-card-4-name-rating">
+                    <input class="hotel-card-4-rating" type="submit" value="Рейтинг: 5.0">
+                  </td>
+                </tr>
+              </table>
             </a>
-            <div class="hotel-card-3-name">
-              <p class="hotel-card-3-name-type">Гостиница</p>
-              <p class="hotel-card-3-name-price">От 1500 ₽</p>
-              <a class="hotel-card-3-name-button-for button" href="#">Подробнее</a><br>
-              <a class="hotel-card-3-name-button-save button" href="#">В избранное</a>
-            </div>
-            <div class="hotels-rating-stars">
-              <img src="#">
-              <span>Рейтинг звезд - 2</span>
-            </div>
-            <div class="rating-views">
-              <p class="rating-text">Рейтинг: 5.0</p>
-            </div>
-          </li>
-        </ul>
+          </fieldset>
+        </form>
       </section>
       <section class="pagination">
         <!-- Четвертая секция - форма страниц -->
@@ -276,7 +310,7 @@
             </a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-list-current">1</a>
+            <a href="#" class="pagination-link pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -313,24 +347,24 @@
       </section>
     </main>
     <footer class="page-footer">
-      <!-- Подвал главной страницы -->
+    <!-- Подвал главной страницы -->
         <nav class="page-footer-contacts">
         <!-- Меню навигации в подвале -->
           <ul class="footer-social-list">
           <!-- Список меню в подвале -->
             <li class="footer-social-item">
               <a class="footer-social-item-vk" href="https://t.me/htmlacademy" type="button">
-                <span><img src="images/icons/vk.png" alt="Vkontakte"></span>
+                <span><img src="images/icons/vk.png" alt="Vkontakte"  class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-item-telegram" href="https://t.me/htmlacademy" type="button">
-                <span><img src="images/icons/telegram.png" alt="Telegram"></span>
+                <span><img src="images/icons/telegram.png" alt="Telegram"  class="visually-hidden">Телеграмм</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-item-youtube" href="https://www.youtube.com/user/htmlacademyru" type="button">
-                <span><img src="images/icons/youtube.png" alt="Youtube"></span>
+                <span><img src="images/icons/youtube.png" alt="Youtube"  class="visually-hidden">Ютуб</span>
               </a>
             </li>
           </ul>
@@ -344,11 +378,11 @@
           <ul>
             <li class="footer-social-item">
               <a href="https://htmlacademy.ru/">
-                <span><img src="images/logo/brand-htmlacademy.png" alt="Логотип HTML academy"></span>
+                <span><img src="images/logo/brand-htmlacademy.png" alt="Логотип HTML academy" class="visually-hidden">HTML Академия</span>
               </a>
             </li>
           </ul>
         </nav>
-      </footer>
+    </footer>
   </body>
 </html>
