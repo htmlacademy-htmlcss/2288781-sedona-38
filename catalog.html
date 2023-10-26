@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" sizes="any" href="images/favikon.svg" type="image/svg+xml">
     <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> Каталог гостиниц в Седоне</title>
+    <base href="https://github.com/htmlacademy-htmlcss/2288781-sedona-38">
   </head>
   <body>
     <header class="page-header">
@@ -190,11 +192,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="hotel-card-1-name-stars">
-                    <img src="images/icons/star.png" alt="Первая звезда">
-                    <img src="images/icons/star.png" alt="Вторая звезда">
-                    <img src="images/icons/star.png" alt="Третья звезда">
-                    <img src="images/icons/star.png" alt="Четвертая звезда">
+                  <td class="hotel-stars">
+                    <p class="stars-4">
+                      <span class="visually-hidden">Четырехзвездочный отель</span>
+                    </p>
                   </td>
                   <td class="hotel-card-1-name-rating">
                     <input class="hotel-card-1-rating" type="submit" value="Рейтинг: 8.5">
@@ -222,11 +223,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="hotel-card-2-name-stars">
-                    <img src="images/icons/star.png" alt="Первая звезда">
-                    <img src="images/icons/star.png" alt="Вторая звезда">
-                    <img src="images/icons/star.png" alt="Третья звезда">
-                    <img src="images/icons/star.png" alt="Четвертая звезда">
+                  <td class="hotel-stars">
+                    <p class="stars-4">
+                      <span class="visually-hidden">Четырехзвездочный отель</span>
+                    </p>
                   </td>
                   <td class="hotel-card-2-name-rating">
                     <input class="hotel-card-2-rating" type="submit" value="Рейтинг: 9.2">
@@ -254,10 +254,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="hotel-card-3-name-stars">
-                    <img src="images/icons/star.png" alt="Первая звезда">
-                    <img src="images/icons/star.png" alt="Вторая звезда">
-                    <img src="images/icons/star.png" alt="Третья звезда">
+                  <td class="hotel-stars">
+                    <p class="stars-3">
+                      <span class="visually-hidden">Трехзвездочный отель</span>
+                    </p>
                   </td>
                   <td class="hotel-card-3-name-rating">
                     <input class="hotel-card-3-rating" type="submit" value="Рейтинг: 6.9">
@@ -285,9 +285,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="hotel-card-4-name-stars">
-                    <img src="images/icons/star.png" alt="Первая звезда">
-                    <img src="images/icons/star.png" alt="Вторая звезда">
+                  <td class="hotel-stars">
+                    <p class="stars-2">
+                      <span class="visually-hidden">Двухзвездочный отель</span>
+                    </p>
                   </td>
                   <td class="hotel-card-4-name-rating">
                     <input class="hotel-card-4-rating" type="submit" value="Рейтинг: 5.0">
@@ -309,7 +310,7 @@
             </a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-link-current">1</a>
+            <a href="#" class="pagination-link" aria-current="page">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
