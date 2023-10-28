@@ -1,0 +1,27 @@
+body {
+  background-color: rgba(137, 182, 162, 0.945);
+}
+
+page-header{}
+
+brend{}
+
+navigation{}
+
+navigation-list{}
+
+navigation-item {
+  display: flex;
+  padding: 20px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+navigation-link {
+  color: rgba(0, 0, 0, 1);
+}
+
+
