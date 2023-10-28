@@ -2,27 +2,29 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="any" href="images/favikon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
     <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> главная страница</title>
+    <base href="https://github.com/htmlacademy-htmlcss/2288781-sedona-38" />
     <base href="https://htmlacademy-htmlcss.github.io/2288781-sedona-38/4/">
 </head>
   <body>
     <header class="page-header">
     <!-- Шапка главной страницы -->
-      <h1 class="page-header-title visually-hidden">Официальный сайт города Седоны</h1>
-      <!-- Заголовок главной страницы (невидимый) -->
+    <a class="brend" href="index.html" aria-current="page">
+      <img src="images/brand-sedona.png" alt="Бренд логотипа Седоны">
+      <!-- Основной логотип города Седоны-->
+    </a>
       <nav class="navigation">
       <!-- Меню навигации -->
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Бренд логотипа Седоны" src="images/logo/brand-sedona.png" >
-          <!-- Основной логотип города Седоны-->
-        </a>
         <ul class="navigation-list">
         <!-- Список первой части меню -->
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -30,58 +32,37 @@
         </ul>
         <ul class="navigation-list2">
         <!-- Список второй части меню -->
-          <li class="navigation-list2-item">
-            <a class="navigation-list2-link-quote" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
             <!-- Открытие модального окна через Поиск -->
-              <img class="navigation-list2-link-img navigation-list2-link-icon" src="images/icons/search.png" alt="Иконка - поиск">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-list2-item">
-            <a class="navigation-list2-link-quote" href="#">
-              <img class="navigation-list2-link-img navigation-list2-link-icon"  src="images/icons/heart.png" alt="Иконка - корзина">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">12</span>
             </a>
           </li>
-          <li class="navigation-list2-item">
-            <a class="navigation-list2-item-quote" href="catalog.html">
-              <form class="navigation-list2-item-button">
-                <button class="navigation-list2-item-quote-button" type="button">
-                  <span>Хочу сюда</span>
+          <li class="navigation-item">
+            <form>
+              <a class="navigation-link" href="#">
+                <button class="navigation-button" type="button">
+                  <span>Хочу сюда!</span>
                 </button>
-              </form>
-            </a>
+              </a>
+            </form>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
     <!-- Основное содержимое главной страницы -->
-      <section class="main-index-header">
-      <!-- Шапка основного содержимого -->
-        <h2 class="main-index-header-title visually-hidden" >Напутствие по-английски - Добро пожаловать в великолепную Седону! "Ибо заволакивает Великий Каньон!" = Welcome to the gorgeous Sedona. "Because the Grand Canyon sucks!"</h2>
-        <!-- Подзаголовок главной страницы (невидимый) -->
-          <ul class="main-index-header-list">
-            <li class="main-index-header-item">
-            <!-- Фото 1 -->
-              <img class="photo1" src="images/foto1.jpg" alt="Скалы в окрестностях города Седоны">
-            </li>
-            <li class="main-index-header-item">
-            <!-- Острые углы -->
-              <img class="main-index-header-cornes" src="images/sharp-corners.svg" alt="Острые углы">
-            </li>
-            <!-- Большой логотип -->
-            <li class="main-index-header-item">
-            <!-- Слово по-английски "Приглашаем" -->
-              <img class="main-index-header-logo" src="images/logo/welcome.png" alt="Слово по-английски - Приглашаем">
-            </li>
-            <li class="main-index-header-item">
-            <!-- Слово по-английски "в великолепную" -->
-              <img class="main-index-header-logo2" src="images/logo/gorgeous.svg" alt="Слово по-английски - в великолепную">
-            </li>
-            <li class="main-index-header-item">
-              <!-- Слово по-английски "Седону" -->
-              <img class="main-index-header-logo3" src="images/logo/sedona.png" alt="Слово по-английски - Седону, а также словосочетание по-английски - Ибо заволакивает Великий Каньон!">
-            </li>
-          </ul>
+      <section class="hero">
+        <h1 class="main-index-title visually-hidden">Cайт поиска отелей в городе Седоне</h1>
+        <!-- Заголовок главной страницы (скрытый) -->
+        <p class="visually-hidden">
+          <img src="images/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+        </p>
       </section>
       <section class="advantages">
       <!-- Основной смысл главной страницы и причины, заслуживающие внимания -->
@@ -90,17 +71,12 @@
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <div class="advantages-reasons">
           <h3 class="advantages-title visually-hidden">Причины</h3>
-          <!-- Подзаголовок причин (невидимый) -->
+          <!-- Подзаголовок причин (скрытый) -->
           <ul class="advantages-list">
           <!-- Список причин -->
             <li class="advantages-item">
               <h4 class="advantages-subtitle">Настоящий городок</h4>
               <!-- Подзаголовок первой причины -->
-              <ul>
-                <li>
-                  <img class="advantages-line" src="images/rectangle.png" alt="Графика - линия">
-                </li>
-              </ul>
               <p>Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
               <img class="advantages-square" src="images/theme-white.png" alt="Фон голубого цвета">
               <!-- Фон - прямоугольник голубого цвета -->
@@ -119,11 +95,6 @@
             <li class="advantages-item">
               <h4 class="advantages-subtitle">Красивая<br> дорога</h4>
               <!-- Подзаголовок третьей причины -->
-              <ul>
-                <li>
-                  <img class="advantages-line" src="images/rectangle.png" alt="Графика - линия">
-                </li>
-              </ul>
               <p>Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </li>
             <li class="advantages-item">
@@ -142,11 +113,6 @@
               <!-- Фон - прямоугольник голубого цвета -->
               <h4 class="advantages-subtitle">Там есть<br> мост дьявола</h4>
               <!-- Подзаголовок пятой причины -->
-              <ul>
-                <li>
-                  <img class="advantages-line" src="images/rectangle.png" alt="Графика - линия">
-                </li>
-              </ul>
               <p>Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
             </li>
           </ul>
@@ -159,22 +125,19 @@
         <p class="text">Опытный персонал и качественное обслуживание!</p>
         <div>
           <h3 class="services-subtitle visually-hidden">Преимущества города Седоны</h3>
-          <!-- Подзаголовок преимуществ города Седоны (невидимый) -->
+          <!-- Подзаголовок преимуществ города Седоны (скрытый) -->
           <ul class="services-list">
             <li class="services-item">
-              <img class="services-icon" src="images/icons/home.png" alt="Графика - дом">
               <h4 class="services-title">Жильё</h4>
               <!-- Подзаголовок первого преимущества -->
               <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="services-item">
-              <img class="services-icon" src="images/icons/food.png" alt="Графика - бургер">
               <h4 class="services-title">Еда</h4>
               <!-- Подзаголовок второго преимущества -->
               <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
             <li class="services-item">
-              <img class="services-icon" src="images/icons/souvenir.png" alt="Графика - подарок (сувениры)">
               <h4 class="services-title">Сувениры</h4>
               <!-- Подзаголовок третьего преимущества -->
               <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
