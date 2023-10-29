@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" sizes="any" href="images/favikon.svg" type="image/svg+xml">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="icon" sizes="any" href="images/favicons/favikon-32.svg" alt="Фавиконка сайта - главная страница" width="32" height="32" type="image/svg+xml">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
     <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> главная страница</title>
     <!-- <base href="https://github.com/htmlacademy-htmlcss/2288781-sedona-38"/> -->
   </head>
@@ -33,12 +33,12 @@
         <!-- Список второй части меню -->
           <li class="navigation-item">
             <a class="navigation-link" type="image/svg+xml" href="#">
-              <span type="image/svg+xml"><img src="images/search.svg"></span>
+              <span type="image/svg+xml"><img src="images/icons/search.svg" alt="Поиск"></span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span type="image/svg+xml"><img src="images/heart.svg">12</span>
+              <span type="image/svg+xml"><img src="images/icons/heart.svg" alt="Избранное">12</span>
             </a>
           </li>
         </ul>
@@ -52,88 +52,95 @@
     <main class="main-index">
     <!-- Основное содержимое главной страницы -->
       <section class="hero">
+      <!-- Первая секция - основной смысл главной страницы -->
         <h1 class="hero-title visually-hidden">Cайт поиска отелей в городе Седоне</h1>
         <!-- Заголовок главной страницы (скрытый) -->
         <p class="visually-hidden">Welcome to the gorgeous Sedona, because the Grand Canyon sucks!</p>
-        <img class="hero-foto1-mountans" src="images/foto1-mountans.jpg">
-        <img src="images/welcome.svg" type="image/svg+xml" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" aria-hidden="true">
+        <img src="images/content/welcome.svg" type="image/svg+xml" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" aria-hidden="true"><br>
+        <img class="hero-foto1-mountans" src="images/content/foto1-mountans.jpg">
         <img src="images/zig-zag.png" alt="Зиг заг">
       </section>
       <section class="advantages">
-      <!-- Основной смысл главной страницы и причины, заслуживающие внимания -->
+      <!-- Вторая секция - причины, заслуживающие внимания -->
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <!-- Подзаголовок основного смысла -->
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <div class="advantages-reasons">
-          <img class="advantages-photo2-city" src="images/foto2-city.jpg" alt="Домики в окрестностях города Седоны">
-          <h3 class="advantages-title visually-hidden">Причины</h3>
-          <!-- Подзаголовок причин (скрытый) -->
-          <ol class="advantages-list">
-          <!-- Список причин -->
+          <ul class="advantages-list">
             <li class="advantages-item">
-              <h4 class="advantages-subtitle">Настоящий городок</h4>
+              <h3 class="advantages-subtitle">Настоящий городок</h3>
               <!-- Подзаголовок первой причины -->
+              <p class="line">&mdash;</p>
               <p>Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
             </li>
+          </ul>
+          <img class="advantages-photo2-city" src="images/content/foto2-city.jpg" alt="Домики в окрестностях города Седоны">
+        </div>
+        <div class="advantages-reasons">
+          <ul class="advantages-list">
             <li class="advantages-item">
-              <h4 class="advantages-subtitle">Небольшая<br> площадь</h4>
+              <h3 class="advantages-subtitle">Небольшая<br> площадь</h3>
               <!-- Подзаголовок второй причины -->
+              <p class="line">&mdash;</p>
               <p>Все достопримечательности<br> находятся очень близко</p>
             </li>
             <li class="advantages-item">
-              <h4 class="advantages-subtitle">Красивая<br> дорога</h4>
+              <h3 class="advantages-subtitle">Красивая<br> дорога</h3>
               <!-- Подзаголовок третьей причины -->
+              <p class="line">&mdash;</p>
               <p>Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </li>
             <li class="advantages-item">
-              <h4 class="advantages-subtitle">Мало<br> туристов</h4>
+              <h3 class="advantages-subtitle">Мало<br> туристов</h3>
               <!-- Подзаголовок четвертой причины -->
+              <p class="line">&mdash;</p>
               <p>Большинство едет в Гранд<br> Каньон и толпится там</p>
-            </li>
-            <li class="advantages-item">
-              <h4 class="advantages-subtitle">Там есть<br> мост Дьявола</h4>
-              <!-- Подзаголовок пятой причины -->
-              <p>Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
-            </li>
-          </ol>
-          <img class="advantages-photo3-bridge"- src="images/foto3-canyon.jpg" alt="Скалы у моста Дьявола в окрестностях Седоны">
-        </div>
-      </section>
-      <section class="services">
-      <!-- Секция "Услуги" -->
-        <h2 class="services-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
-        <!-- Основной смысл преимуществ города Седоны -->
-        <p class="text">Опытный персонал и качественное обслуживание!</p>
-        <div>
-          <h3 class="services-subtitle visually-hidden">Преимущества города Седоны</h3>
-          <!-- Подзаголовок преимуществ города Седоны (скрытый) -->
-          <ul class="services-list">
-            <li class="services-item">
-              <a class="navigation-link">
-                <span type="image/svg+xml"><img src="images/home.svg"></span>
-              </a>
-              <h4 class="services-title">Жильё</h4>
-              <!-- Подзаголовок первого преимущества -->
-              <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
-            </li>
-            <li class="services-item">
-              <a class="navigation-link">
-                <span type="image/svg+xml"><img src="images/food.svg"></span>
-              </a>
-              <h4 class="services-title">Еда</h4>
-              <!-- Подзаголовок второго преимущества -->
-              <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
-            </li>
-            <li class="services-item">
-              <a class="navigation-link">
-                <span type="image/svg+xml"><img src="images/souvenir.svg"></span>
-              </a>
-              <h4 class="services-title">Сувениры</h4>
-              <!-- Подзаголовок третьего преимущества -->
-              <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </li>
           </ul>
         </div>
+        <div>
+          <ul>
+            <li class="advantages-item">
+              <h3 class="advantages-subtitle">Там есть<br> мост Дьявола</h3>
+              <!-- Подзаголовок пятой причины -->
+              <p class="line">&mdash;</p>
+              <p>Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+            </li>
+          </ul>
+          <img class="advantages-photo3-canyon"- src="images/content/foto3-canyon.jpg" alt="Скалы у моста Дьявола в окрестностях Седоны">
+        </div>
+      </section>
+      <section class="services">
+      <!-- Третья секция - преимущества -->
+        <h2 class="services-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+        <!-- Основной смысл преимуществ города Седоны -->
+        <p class="text">Опытный персонал и качественное обслуживание!</p>
+        <ul class="services-list">
+          <li class="services-item">
+            <a class="navigation-link">
+              <span type="image/svg+xml"><img src="images/icons/home.svg" alt="Домик"></span>
+            </a>
+            <h3 class="services-title">Жильё</h3>
+            <!-- Подзаголовок первого преимущества -->
+            <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+          </li>
+          <li class="services-item">
+            <a class="navigation-link">
+              <span type="image/svg+xml"><img src="images/icons/food.svg" alt="Бургер"></span>
+            </a>
+            <h3 class="services-title">Еда</h3>
+            <!-- Подзаголовок второго преимущества -->
+            <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li>
+          <li class="services-item">
+            <a class="navigation-link">
+              <span type="image/svg+xml"><img src="images/icons/souvenir.svg" alt="Сувенир"></span>
+            </a>
+            <h3 class="services-title">Сувениры</h3>
+            <!-- Подзаголовок третьего преимущества -->
+            <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+          </li>
+        </ul>
         <div class="interest">
           <h2 class="interest-title">Заинтересовались?</h2>
           <p class="interest-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -145,7 +152,7 @@
         </div>
       </section>
       <section class="mailing">
-        <img class="mailing-photo4" src="images/foto4-subscribe.jpg" alt="Прозрачный вид на скалы в окрестностях Седоны">
+      <!-- Четвертая секция - рассылка -->
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="mailing-form" id="form" action="https://echo.htmlacademy.ru/" method="post">
@@ -154,6 +161,7 @@
               <span>Подписаться</span>
             </button>
           </form>
+        <img class="mailing-photo4" src="images/content/foto4-subscribe.jpg" alt="Прозрачный вид на скалы в окрестностях Седоны">
       </section>
     </main>
     <footer class="page-footer">
@@ -164,17 +172,17 @@
         <!-- Список меню в подвале -->
           <li class="footer-social-item">
             <a class="footer-social-item-vk" href="https://t.me/htmlacademy" type="button">
-              <span type="image/svg+xml"><img src="images/vk-focus.svg" alt="Бренд ВКонтакте"></span>
+              <span type="image/svg+xml"><img src="images/icons/vk-focus.svg" alt="Бренд ВКонтакте"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-item-telegram" href="https://t.me/htmlacademy" type="button">
-              <span type="image/svg+xml"><img src="images/telegram-focus.svg" alt="Бренд Телеграмм"></span>
+              <span type="image/svg+xml"><img src="images/icons/telegram-focus.svg" alt="Бренд Телеграмм"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-item-youtube" href="https://www.youtube.com/user/htmlacademyru" type="button">
-              <span type="image/svg+xml"><img src="images/youtube-focus.svg" alt="Бренд Ютуб"></span>
+              <span type="image/svg+xml"><img src="images/icons/youtube-focus.svg" alt="Бренд Ютуб"></span>
             </a>
           </li>
         </ul>
