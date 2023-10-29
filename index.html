@@ -4,18 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" sizes="any" href="images/favikon.svg" type="image/svg+xml">
-    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> главная страница</title>
     <!-- <base href="https://github.com/htmlacademy-htmlcss/2288781-sedona-38"/> -->
-    <base href="https://htmlacademy-htmlcss.github.io/2288781-sedona-38/4/">
   </head>
   <body>
     <header class="page-header">
     <!-- Шапка главной страницы -->
       <nav class="navigation">
       <!-- Меню навигации -->
-        <a class="brend" href="index.html">
-          <img src="#" alt="Бренд логотипа Седоны" type="image/svg+xml" aria-current="page">
+        <a class="brend" href="index.html" aria-current="page">
+          <img src="images/brand-sedona.svg" alt="Бренд логотипа Седоны" type="image/svg+xml">
           <!-- Основной логотип города Седоны-->
         </a>
         <ul class="navigation-list">
@@ -33,13 +32,13 @@
         <ul class="navigation-list2">
         <!-- Список второй части меню -->
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span src="#" type="image/svg+xml" class="visually-hidden">Поиск</span>
+            <a class="navigation-link" type="image/svg+xml" href="#">
+              <span type="image/svg+xml"><img src="images/search.svg"></span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span src="#" type="image/svg+xml" class="visually-hidden">Избранное</span>
+              <span type="image/svg+xml"><img src="images/heart.svg">12</span>
             </a>
           </li>
         </ul>
@@ -52,18 +51,23 @@
     </header>
     <main class="main-index">
     <!-- Основное содержимое главной страницы -->
-      <h1 class="main-index-title visually-hidden">Cайт поиска отелей в городе Седоне</h1>
-      <!-- Заголовок главной страницы (скрытый) -->
-      <img class="main-index-foto1-kanyon" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+      <section class="hero">
+        <h1 class="hero-title visually-hidden">Cайт поиска отелей в городе Седоне</h1>
+        <!-- Заголовок главной страницы (скрытый) -->
+        <p class="visually-hidden">Welcome to the gorgeous Sedona, because the Grand Canyon sucks!</p>
+        <img class="hero-foto1-mountans" src="images/foto1-mountans.jpg">
+        <img src="images/welcome.svg" type="image/svg+xml" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" aria-hidden="true">
+        <img src="images/zig-zag.png" alt="Зиг заг">
+      </section>
       <section class="advantages">
       <!-- Основной смысл главной страницы и причины, заслуживающие внимания -->
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <!-- Подзаголовок основного смысла -->
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <div class="advantages-reasons">
+          <img class="advantages-photo2-city" src="images/foto2-city.jpg" alt="Домики в окрестностях города Седоны">
           <h3 class="advantages-title visually-hidden">Причины</h3>
           <!-- Подзаголовок причин (скрытый) -->
-          <img class="advantages-photo2-city" src="#" alt="Домики в окрестностях города Седоны">
           <ol class="advantages-list">
           <!-- Список причин -->
             <li class="advantages-item">
@@ -92,12 +96,12 @@
               <p>Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
             </li>
           </ol>
-          <img class="advantages-photo3-bridge"- src="#" alt="Скалы у моста Дьявола в окрестностях Седоны">
+          <img class="advantages-photo3-bridge"- src="images/foto3-canyon.jpg" alt="Скалы у моста Дьявола в окрестностях Седоны">
         </div>
       </section>
       <section class="services">
       <!-- Секция "Услуги" -->
-        <h2 class="services-title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!</h2>
+        <h2 class="services-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
         <!-- Основной смысл преимуществ города Седоны -->
         <p class="text">Опытный персонал и качественное обслуживание!</p>
         <div>
@@ -105,16 +109,25 @@
           <!-- Подзаголовок преимуществ города Седоны (скрытый) -->
           <ul class="services-list">
             <li class="services-item">
+              <a class="navigation-link">
+                <span type="image/svg+xml"><img src="images/home.svg"></span>
+              </a>
               <h4 class="services-title">Жильё</h4>
               <!-- Подзаголовок первого преимущества -->
               <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="services-item">
+              <a class="navigation-link">
+                <span type="image/svg+xml"><img src="images/food.svg"></span>
+              </a>
               <h4 class="services-title">Еда</h4>
               <!-- Подзаголовок второго преимущества -->
               <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
             <li class="services-item">
+              <a class="navigation-link">
+                <span type="image/svg+xml"><img src="images/souvenir.svg"></span>
+              </a>
               <h4 class="services-title">Сувениры</h4>
               <!-- Подзаголовок третьего преимущества -->
               <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
@@ -132,8 +145,8 @@
         </div>
       </section>
       <section class="mailing">
+        <img class="mailing-photo4" src="images/foto4-subscribe.jpg" alt="Прозрачный вид на скалы в окрестностях Седоны">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-          <img class="photo4" src="#" alt="Вид на скалы в окрестностях Седоны">
           <p class="mailing-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="mailing-form" id="form" action="https://echo.htmlacademy.ru/" method="post">
             <input name="email" type="email" placeholder="Ваш e-mail" href="mailto:email@example.com" required>
@@ -144,24 +157,24 @@
       </section>
     </main>
     <footer class="page-footer">
-    <!-- Подвал главной страницы -->
-      <nav class="page-footer-contacts">
-      <!-- Меню навигации в подвале -->
+      <!-- Подвал главной страницы -->
+        <nav class="page-footer-contacts">
+        <!-- Меню навигации в подвале -->
         <ul class="footer-social-list">
         <!-- Список меню в подвале -->
           <li class="footer-social-item">
             <a class="footer-social-item-vk" href="https://t.me/htmlacademy" type="button">
-              <span class="visually-hidden">ВКонтакте</span>
+              <span type="image/svg+xml"><img src="images/vk-focus.svg" alt="Бренд ВКонтакте"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-item-telegram" href="https://t.me/htmlacademy" type="button">
-              <span class="visually-hidden">Телеграмм</span>
+              <span type="image/svg+xml"><img src="images/telegram-focus.svg" alt="Бренд Телеграмм"></span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-item-youtube" href="https://www.youtube.com/user/htmlacademyru" type="button">
-              <span class="visually-hidden">Ютуб</span>
+              <span type="image/svg+xml"><img src="images/youtube-focus.svg" alt="Бренд Ютуб"></span>
             </a>
           </li>
         </ul>
@@ -175,7 +188,7 @@
         <ul>
           <li class="footer-brand">
             <a href="https://htmlacademy.ru/" type="button">
-              <span class="visually-hidden">Бренд логотипа HTML Академии</span>
+              <span type="image/svg+xml"><img src="images/brand=htmlacademy.svg" alt="Бренд логотипа HTML Академии"></span>
             </a>
           </li>
         </ul>
