@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" sizes="any" href="images/favicons/favikon-32.svg" alt="Фавиконка сайта - главная страница" width="32" height="32" type="image/svg+xml">
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="icon" href="images/icons/favikon-32.svg" alt="Фавиконка сайта Седоны - главная страница." sizes="32x32" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> главная страница</title>
     <!-- <base href="https://github.com/htmlacademy-htmlcss/2288781-sedona-38"/> -->
   </head>
@@ -13,37 +13,45 @@
     <!-- Шапка главной страницы -->
       <nav class="navigation">
       <!-- Меню навигации -->
-        <a class="brend" href="index.html" aria-current="page">
-          <img src="images/brand-sedona.svg" alt="Бренд логотипа Седоны" type="image/svg+xml">
+        <a class="brend" href="#" aria-current="page">
+          <img src="images/brand-sedona.svg" alt="Бренд логотипа Седоны." width="140" height="70" type="image/svg+xml">
           <!-- Основной логотип города Седоны-->
         </a>
         <ul class="navigation-list">
         <!-- Список первой части меню -->
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+            <a class="navigation-link" href="#" aria-current="page">
+              <span>Главная</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="#">
+              <span>О Седоне</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">
+              <span>Гостиницы</span>
+            </a>
           </li>
         </ul>
         <ul class="navigation-list2">
         <!-- Список второй части меню -->
           <li class="navigation-item">
-            <a class="navigation-link" type="image/svg+xml" href="#">
-              <span type="image/svg+xml"><img src="images/icons/search.svg" alt="Поиск"></span>
+            <a class="navigation-link" href="#">
+              <img src="images/icons/search.svg" alt="Поиск." width="20" height="20" type="image/svg+xml">
+              <!-- <span class="visually-hidden">Поиск</span> -->
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span type="image/svg+xml"><img src="images/icons/heart.svg" alt="Избранное">12</span>
+              <img src="images/icons/heart.svg" alt="Избранное." width="20" height="20" type="image/svg+xml">
+              <!-- <span class="visually-hidden">Избранное</span> -->
             </a>
           </li>
         </ul>
-        <a class="navigation-button" href="catalog.html">
-          <button>
+        <a class="navigation-button">
+          <button type="button" href="#">
             <span>Хочу сюда!</span>
           </button>
         </a>
@@ -56,150 +64,155 @@
         <h1 class="hero-title visually-hidden">Cайт поиска отелей в городе Седоне</h1>
         <!-- Заголовок главной страницы (скрытый) -->
         <p class="visually-hidden">Welcome to the gorgeous Sedona, because the Grand Canyon sucks!</p>
-        <img src="images/content/welcome.svg" type="image/svg+xml" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" aria-hidden="true"><br>
-        <img class="hero-foto1-mountans" src="images/content/foto1-mountans.jpg">
-        <img src="images/zig-zag.png" alt="Зиг заг">
+        <img src="images/content/welcome.svg" type="image/svg+xml" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" aria-hidden="true"><br>
+        <img src="images/content/foto1-mountans.jpg" width="1200" height="485" alt="Горы в окрестностях горы Седоны.">
+        <img src="images/zig-zag.png" width="1200" height="57" alt="Зиг заг.">
       </section>
       <section class="advantages">
       <!-- Вторая секция - причины, заслуживающие внимания -->
-        <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <!-- Подзаголовок основного смысла -->
-        <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="advantages-subtitle">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <!-- Подзаголовок секции "Причины" -->
+        <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <div class="advantages-reasons">
+          <h3 class="advantages-subtheme visually-hidden">Причины</h3>
+          <!-- Подтема (скрытый) -->
           <ul class="advantages-list">
             <li class="advantages-item">
-              <h3 class="advantages-subtitle">Настоящий городок</h3>
-              <!-- Подзаголовок первой причины -->
-              <p class="line">&mdash;</p>
+              <strong>Настоящий городок</strong>
+              <p>&mdash;</p>
               <p>Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
             </li>
           </ul>
-          <img class="advantages-photo2-city" src="images/content/foto2-city.jpg" alt="Домики в окрестностях города Седоны">
+          <img src="images/content/foto2-city.jpg" width="800" height="385" alt="Домики в окрестностях города Седоны.">
         </div>
         <div class="advantages-reasons">
+          <h3 class="advantages-subtheme visually-hidden">Причины</h3>
+          <!-- Подтема - продолжение (скрытый) -->
           <ul class="advantages-list">
             <li class="advantages-item">
-              <h3 class="advantages-subtitle">Небольшая<br> площадь</h3>
-              <!-- Подзаголовок второй причины -->
-              <p class="line">&mdash;</p>
+              <strong>Небольшая<br> площадь</strong>
+              <p>&mdash;</p>
               <p>Все достопримечательности<br> находятся очень близко</p>
             </li>
             <li class="advantages-item">
-              <h3 class="advantages-subtitle">Красивая<br> дорога</h3>
-              <!-- Подзаголовок третьей причины -->
-              <p class="line">&mdash;</p>
+              <strong>Красивая<br> дорога</strong>
+              <p>&mdash;</p>
               <p>Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </li>
             <li class="advantages-item">
-              <h3 class="advantages-subtitle">Мало<br> туристов</h3>
-              <!-- Подзаголовок четвертой причины -->
-              <p class="line">&mdash;</p>
+              <strong>Мало<br> туристов</strong>
+              <p>&mdash;</p>
               <p>Большинство едет в Гранд<br> Каньон и толпится там</p>
             </li>
           </ul>
         </div>
-        <div>
+        <div class="advantages-reasons">
+          <h3 class="advantages-subtheme visually-hidden">Причины</h3>
+          <!-- Подтема - продолжение (скрытый) -->
           <ul>
             <li class="advantages-item">
-              <h3 class="advantages-subtitle">Там есть<br> мост Дьявола</h3>
-              <!-- Подзаголовок пятой причины -->
-              <p class="line">&mdash;</p>
+              <strong>Там есть<br> мост Дьявола</strong>
+              <p>&mdash;</p>
               <p>Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
             </li>
           </ul>
-          <img class="advantages-photo3-canyon"- src="images/content/foto3-canyon.jpg" alt="Скалы у моста Дьявола в окрестностях Седоны">
+          <img src="images/content/foto3-canyon.jpg" width="800" height="385" alt="Скалы у моста Дьявола в окрестностях Седоны.">
         </div>
       </section>
       <section class="services">
       <!-- Третья секция - преимущества -->
-        <h2 class="services-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
-        <!-- Основной смысл преимуществ города Седоны -->
+        <h2 class="services-subtitle">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+        <!-- Подзаголовок секций "Преимущества" -->
         <p class="text">Опытный персонал и качественное обслуживание!</p>
-        <ul class="services-list">
-          <li class="services-item">
-            <a class="navigation-link">
-              <span type="image/svg+xml"><img src="images/icons/home.svg" alt="Домик"></span>
-            </a>
-            <h3 class="services-title">Жильё</h3>
-            <!-- Подзаголовок первого преимущества -->
-            <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
-          </li>
-          <li class="services-item">
-            <a class="navigation-link">
-              <span type="image/svg+xml"><img src="images/icons/food.svg" alt="Бургер"></span>
-            </a>
-            <h3 class="services-title">Еда</h3>
-            <!-- Подзаголовок второго преимущества -->
-            <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
-          </li>
-          <li class="services-item">
-            <a class="navigation-link">
-              <span type="image/svg+xml"><img src="images/icons/souvenir.svg" alt="Сувенир"></span>
-            </a>
-            <h3 class="services-title">Сувениры</h3>
-            <!-- Подзаголовок третьего преимущества -->
-            <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
-          </li>
-        </ul>
-        <div class="interest">
-          <h2 class="interest-title">Заинтересовались?</h2>
-          <p class="interest-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="interest-button" href="catalog.html">
-            <button>
-              <span>Поиск гостиницы в Седоне</span>
-            </button>
-          </a>
+        <div class="services">
+          <h3 class="services-subtheme visually-hidden">Преимущества</h3>
+          <!-- Подтема (скрытый) -->
+          <ul class="services-list">
+            <li class="services-item">
+              <img src="images/icons/home.svg" alt="Домик." width="75" height="72" type="image/svg+xml">
+              <!-- <p class="visually-hidden">Домик</p> -->
+              <br>
+              <strong>Жильё</strong>
+              <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+            </li>
+            <li class="services-item">
+              <img src="images/icons/food.svg" alt="Бургер." width="75" height="72" type="image/svg+xml">
+              <!-- <p class="visually-hidden">Бургер</p> -->
+              <br>
+              <strong>Еда</strong>
+              <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+            </li>
+            <li class="services-item">
+              <img src="images/icons/souvenir.svg" alt="Сувенир." width="75" height="72" type="image/svg+xml">
+              <!-- <p class="visually-hidden">Сувенир</p> -->
+              <br>
+              <strong>Сувениры</strong>
+              <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+            </li>
+          </ul>
         </div>
       </section>
+      <section class="interest">
+      <!-- Четвертая секция - интерес -->
+        <h2 class="interest-subtitle">Заинтересовались?</h2>
+        <!-- Подзаголовок секций "Интерес" -->
+        <p class="interest-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="interest-button">
+          <button type="button" href="catalog.html">
+            <span>Поиск гостиницы в Седоне</span>
+          </button>
+        </a>
+      </section>
       <section class="mailing">
-      <!-- Четвертая секция - рассылка -->
+      <!-- Пятая секция - рассылка -->
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-          <p class="mailing-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form class="mailing-form" id="form" action="https://echo.htmlacademy.ru/" method="post">
-            <input name="email" type="email" placeholder="Ваш e-mail" href="mailto:email@example.com" required>
-            <button class="mailing-form-button" type="submit">
-              <span>Подписаться</span>
-            </button>
-          </form>
-        <img class="mailing-photo4" src="images/content/foto4-subscribe.jpg" alt="Прозрачный вид на скалы в окрестностях Седоны">
+        <!-- Подзаголовок секций "Рассылка" -->
+        <p class="mailing-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form class="mailing-form" id="form" action="https://echo.htmlacademy.ru/" method="post">
+          <input name="email" type="email" placeholder="Ваш e-mail" href="mailto:email@example.com" required>
+          <button class="mailing-form-button" type="submit">
+            <span>Подписаться</span>
+          </button>
+        </form>
+        <img src="images/content/foto4-subscribe.jpg" width="1200" height="415" alt="Прозрачный вид на скалы в окрестностях Седоны.">
       </section>
     </main>
-    <footer class="page-footer">
-      <!-- Подвал главной страницы -->
-        <nav class="page-footer-contacts">
-        <!-- Меню навигации в подвале -->
-        <ul class="footer-social-list">
-        <!-- Список меню в подвале -->
-          <li class="footer-social-item">
-            <a class="footer-social-item-vk" href="https://t.me/htmlacademy" type="button">
-              <span type="image/svg+xml"><img src="images/icons/vk-focus.svg" alt="Бренд ВКонтакте"></span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-item-telegram" href="https://t.me/htmlacademy" type="button">
-              <span type="image/svg+xml"><img src="images/icons/telegram-focus.svg" alt="Бренд Телеграмм"></span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-item-youtube" href="https://www.youtube.com/user/htmlacademyru" type="button">
-              <span type="image/svg+xml"><img src="images/icons/youtube-focus.svg" alt="Бренд Ютуб"></span>
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li class="footer-phone">
-            <a href="tel:+7(812)812-12-12">
-              <span>+7(812)812-12-12</span>
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li class="footer-brand">
-            <a href="https://htmlacademy.ru/" type="button">
-              <span type="image/svg+xml"><img src="images/brand=htmlacademy.svg" alt="Бренд логотипа HTML Академии"></span>
-            </a>
-          </li>
-        </ul>
+    <footer class="footer-page">
+    <!-- Подвал главной страницы -->
+      <nav class="footer-navigation">
+        <div class="footer-contacts">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://vk.com/htmlacademy">
+                <img src="images/icons/vk-focus.svg" alt="Российская социальная сеть «ВКонтакте»." width="24" height="14" type="image/svg+xml">
+                <!-- <span class="visually-hidden">ВКонтакте</span> -->
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://t.me/htmlacademy">
+                <img src="images/icons/telegram-focus.svg" alt="«Мессенджер Telegram." width="18" height="16" type="image/svg+xml">
+                <!-- <span class="visually-hidden">Telegram</span> -->
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="images/icons/youtube-focus.svg" alt="Видеохостинг YouTube." width="22" height="17" type="image/svg+xml">
+                <!-- <span class="visually-hidden">Youtube</span> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-phone">
+          <a href="tel:+7(812)812-12-12">
+            <span>+7(812)812-12-12</span>
+          </a>
+        </div>
+        <div class="footer-brand">
+          <a href="https://htmlacademy.ru/">
+            <img src="images/brand=htmlacademy.svg" alt="Бренд логотипа HTML Academy." width="115" height="33" type="image/svg+xml">
+            <!-- <span class="visually-hidden">HTML Academy</span> -->
+          </a>
+        </div>
       </nav>
     </footer>
   </body>
