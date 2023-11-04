@@ -1,8 +1,127 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* PT Sans Narrow */
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.title {
+  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700; /* если не загрузится Roboto, подменный безопасный шрифт Arial не сможет стать жирным, если не указывать это свойство */
+}
+
+
+@font-face {
+  font-family: "Font";
+  src: url("font.woff2") format("woff2"),
+       url("font.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  background-color: #0f6e0f;
+
+  background-image: url("../images/content/foto1-mountans.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 1px rgba(8, 74, 228, 0.7);
+}
+
+.menu {
+  display: flex;
+}
+
+
+/* Шапка главной страницы */
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+page-header
+
+navigation
+
+navigation-logo
+
+page-header-logo
+
+
+navigation-list
+
+navigation-item
+
+navigation-link
+
+navigation-link-current
+
+navigation-user
+
+navigation-button
+
+main-index
+
 .hero {
-  background-image: url(../images/brand-sedona.svg));
-  background-color: #000000;
-  background-size: cover, contain;
-  background-position: no-repeat;
-  background-center: center button;
+  body {
+    background-color: #000;
+    background-image: url(../images/content/welcome.svg), url(../images/content/foto1-mountans.jpg), url(../images/zig-zag.png);
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 

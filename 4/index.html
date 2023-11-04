@@ -4,40 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icons/favikon-32.svg" alt="Фавиконка сайта Седоны - главная страница." sizes="32x32" type="image/svg+xml">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> главная страница</title>
     <!-- <base href="https://github.com/htmlacademy-htmlcss/2288781-sedona-38"/> -->
     <base href="https://htmlacademy-htmlcss.github.io/2288781-sedona-38/4/">
 </head>
-  <body>
-    <header class="page-header">
+    <body>
+
     <!-- Шапка главной страницы -->
+    <header class="page-header">
+
+      <!-- Меню -->
       <nav class="navigation">
-      <!-- Меню навигации -->
-        <a class="brend" href="#" aria-current="page">
-          <img src="images/brand-sedona.svg" alt="Бренд логотипа Седоны." width="140" height="70" type="image/svg+xml">
-          <!-- Основной логотип города Седоны-->
+
+        <!-- Основной логотип города Седоны-->
+        <a class="navigation-logo" href="index.html" aria-current="page">
+          <img class="page-header-logo" src="images/brand-sedona.svg" alt="Бренд логотипа Седоны." width="140" height="70" type="image/svg+xml">
         </a>
-        <ul class="navigation-list">
+
         <!-- Список первой части меню -->
+        <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#" aria-current="page">
-              <span>Главная</span>
-            </a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span>О Седоне</span>
-            </a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">
-              <span>Гостиницы</span>
-            </a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list2">
+
         <!-- Список второй части меню -->
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -48,26 +50,48 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
+          <li>
+            <form>
+              <a class="navigation-button">
+                <button type="button" href="#">
+                  <span>Хочу сюда!</span>
+                </button>
+              </a>
+            </form>
+          </li>
         </ul>
-        <a class="navigation-button">
-          <button type="button" href="#">
-            <span>Хочу сюда!</span>
-          </button>
-        </a>
+
       </nav>
+
     </header>
-    <main class="main-index">
+
     <!-- Основное содержимое главной страницы -->
-      <section class="hero">
+    <main class="main-index">
+
+      <!-- Заголовок главной страницы (скрытый) -->
+      <h1 class="main-index-title visually-hidden">Cайт поиска отелей в городе Седоне</h1>
+
       <!-- Первая секция - основной смысл главной страницы -->
-        <h1 class="hero-title visually-hidden">Cайт поиска отелей в городе Седоне</h1>
-        <!-- Заголовок главной страницы (скрытый) -->
+      <section class="hero">
+        <!-- Подзаголовок (скрытый) -->
+        <h2 class="hero-subtitul visually-hidden">Добро пожаловать в великолепный город Седона!</h2>
         <p class="visually-hidden">Welcome to the gorgeous Sedona, because the Grand Canyon sucks!</p>
-        <img src="images/content/welcome.svg" type="image/svg+xml" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" aria-hidden="true"><br>
-        <img src="images/content/foto1-mountans.jpg" width="1200" height="485" alt="Горы в окрестностях горы Седоны.">
-      </section>
-      <section class="advantages">
+<!--         <img src="images/content/foto1-mountans.jpg" width="1200" height="485" alt="Горы в окрестностях Седоны.">
+        <img src="images/content/welcome.svg" type="image/svg+xml" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" aria-hidden="true">
+ -->      </section>
+
+
+
+
+
+
+
+
+
       <!-- Вторая секция - причины, заслуживающие внимания -->
+      <section class="advantages">
+
+
         <h2 class="advantages-subtitle">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <!-- Подзаголовок секции "Причины" -->
         <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -182,20 +206,17 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://vk.com/htmlacademy">
-                <img src="images/icons/vk-focus.svg" alt="Российская социальная сеть «ВКонтакте»." width="24" height="14" type="image/svg+xml">
-                <!-- <span class="visually-hidden">ВКонтакте</span> -->
+                <span class="visually-hidden">Российская социальная сеть «ВКонтакте».</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://t.me/htmlacademy">
-                <img src="images/icons/telegram-focus.svg" alt="«Мессенджер Telegram." width="18" height="16" type="image/svg+xml">
-                <!-- <span class="visually-hidden">Telegram</span> -->
+                <span class="visually-hidden">Канал в Telegram.</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="images/icons/youtube-focus.svg" alt="Видеохостинг YouTube." width="22" height="17" type="image/svg+xml">
-                <!-- <span class="visually-hidden">Youtube</span> -->
+                <span class="visually-hidden">Видеохостинг Youtube.</span>
               </a>
             </li>
           </ul>
@@ -206,9 +227,8 @@
           </a>
         </div>
         <div class="footer-brand">
-          <a href="https://htmlacademy.ru/">
-            <img src="images/brand=htmlacademy.svg" alt="Бренд логотипа HTML Academy." width="115" height="33" type="image/svg+xml">
-            <!-- <span class="visually-hidden">HTML Academy</span> -->
+          <a class="footer-brand" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Бренд HTML Academy.</span>
           </a>
         </div>
       </nav>
