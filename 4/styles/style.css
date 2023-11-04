@@ -1,2 +1,8 @@
-
+.hero {
+  background-image: url(../images/brand-sedona.svg));
+  background-color: #000000;
+  background-size: cover, contain;
+  background-position: no-repeat;
+  background-center: center button;
+}
 
