@@ -1,3 +1,6 @@
+/* -Шрифты- */
+
+/* PT Sans */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -14,114 +17,254 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
+/* -Стилизация- */.
 
-/* PT Sans Narrow */
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
+/* Основные стили */
+
+html	{
+  height: 100%;
 }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
-}
-
-.title {
-  font-family: "Roboto Bold", "Arial", sans-serif;
-  font-weight: 700; /* если не загрузится Roboto, подменный безопасный шрифт Arial не сможет стать жирным, если не указывать это свойство */
-}
-
-
-@font-face {
-  font-family: "Font";
-  src: url("font.woff2") format("woff2"),
-       url("font.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-
-body {
+  width: 1200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
-  background-color: #0f6e0f;
-
-  background-image: url("../images/content/foto1-mountans.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-color:  #57202057;
 }
 
-.button:focus {
-  outline: none;
-  box-shadow: 0 0 1px rgba(8, 74, 228, 0.7);
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.menu {
-  display: flex;
+/* Стили меню */
+
+.page-header {.
+  width: 1200px;
+  height: 64px;
+}
+
+.navigation {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+
+}
+
+.page-header-logo {
+
+}
+
+.navigation-list {
+  display:flex;
+  flex-direction: row;
+  margin: 5px;
+  margin-top:auto;
+  padding: 5px;
+  width: 339px;
+  list-style: none;
+}
+
+.navigation-item {
+
+}
+
+.navigation-link {
+
+}
+
+.navigation-link-current {
+
+}
+
+.navigation-user {
+
+}
+
+.navigation-button {
+
 }
 
 
-/* Шапка главной страницы */
+/* Стили основного содержимого */
 
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
-}
+.main-index{}
 
+.hero{}
 
-
-
-
-
-page-header
-
-navigation
-
-navigation-logo
-
-page-header-logo
-
-
-navigation-list
-
-navigation-item
-
-navigation-link
-
-navigation-link-current
-
-navigation-user
-
-navigation-button
-
-main-index
-
-.hero {
-  body {
-    background-color: #000;
-    background-image: url(../images/content/welcome.svg), url(../images/content/foto1-mountans.jpg), url(../images/zig-zag.png);
+/* Логотип на фоновом изображении с декоративным элементом */
+.hero-logo {
+    background-image: url(../images/content-fon/mountans.jpg), url(../images/zig-zag.png);
+    background-color: #82B3D3;
     background-size: cover, contain;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
 
+.hero-welcome {
+}
+
+
+.advantages
+
+.advantages-subtitle
+
+.advantages-text
+
+.advantages-reasons
+
+.advantages-subtheme
+
+
+
+.services
+
+.services-subtitle
+
+.services-text
+
+.services-reasons
+
+.services-subtheme
+
+.services-list
+
+.services-item
+
+.services-description
+
+
+.interest
+
+.interest-subtitle
+
+.interest-text
+
+.interest-button
+
+
+.mailing {
+
+}
+
+/* Секция "Рассылка" на фоновом изображении */
+.mailing-item {
+  background-image: url(../images/content-fon/subscribe.jpg);
+  background-color: #82B3D3;
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: white;
+}
+..
+.mailing-form
+
+.mailing-form-button
+
+
+/* Стили подвала */
+
+.footer-page {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  padding: 40px 70px 30px 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-navigation{
+
+}
+
+.footer-contacts
+
+.footer-social-list
+
+.footer-social-item {
+  display: flex;
+  width:142px;.
+  margin-right: auto;
+  margin-top:auto;
+  list-style: none;
+}
+
+.footer-social-link {
+  display: flex;
+  padding: 0px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.icon-vk{
+  background-image: url{../images/icons/vk-focus.svg};
+  
+}
+
+.icon-telegram {
+  background-image: url(../images/icons/telegram-focus.svg);
+  width: 18px;
+  height: 16px;
+}
+
+.icon-youtube {
+  background-image: url(../images/icons/youtube-focus.svg);
+  width: 22px;
+  height: 17px;
+}
+
+
+.footer-phone {
+
+}
+
+.footer-phone-item {
+  display: flex;
+  width:331px;
+  margin-right: auto;
+  margin-top:auto;
+}
+
+.footer-phone-link {
+
+}
+
+
+.footer-brand {
+
+}
+
+.footer-brand-item (
+  display: flex;
+  width:115px;
+  margin-top:auto;
+)
+
+.footer-brand-link {
+
+}
+
+.icon-html{
+  
+}
