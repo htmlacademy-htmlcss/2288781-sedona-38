@@ -8,3 +8,8 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+<<<<<<< Updated upstream
+*.html
+=======
+Borodinski/Uchebniy_proekt_Borodinski/Borodinski/Uchebniy_proekt_Borodinski/Borodinski/Uchebniy_proekt_Borodinski/.index.html
+>>>>>>> Stashed changes
