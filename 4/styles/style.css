@@ -1,3 +1,5 @@
+/*  Шрифты  */
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -14,114 +16,219 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* PT Sans Narrow */
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
-}
+/* Теги */
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
-}
-
-.title {
-  font-family: "Roboto Bold", "Arial", sans-serif;
-  font-weight: 700; /* если не загрузится Roboto, подменный безопасный шрифт Arial не сможет стать жирным, если не указывать это свойство */
-}
-
-
-@font-face {
-  font-family: "Font";
-  src: url("font.woff2") format("woff2"),
-       url("font.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-
-body {
+  background-color: rgba(94, 6, 6, 0.253);
   font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;  
+  margin: 0
+}
+
+background-color: #000000;
+background-image: url("../images/background-body.jpg");
+background-repeat: no-repeat;
+background-position: center top;
+
+
+
+
+h1 {
+  color: #000;
+  text-align: center;
+  font-family: PT Sans, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+  text-transform: uppercase;
+  position: absolute;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  font-family: PT Sans, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+h4 {
   font-size: 16px;
+  font-weight: 700;
   line-height: 24px;
-  color: #242424;
-  background-color: #0f6e0f;
+}
 
-  background-image: url("../images/content/foto1-mountans.jpg");
+p {
+  color: #333;
+  text-align: center;
+  font-family: PT Sans, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Кнопки */
+
+.btn {
+  display: inline-block;
+  border: none;
+  height: 50px;
+  background-color: #eeeeee;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  padding: 8px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  display: inline-block; */
+}
+
+.navigation-button {
+  background: #756157;
+}
+
+.interest-button {
+  background: #82B3D3;
+}
+
+.mailing-form-button {
+  background-color: transparent;
+}
+
+/* Иконки для навигации */
+
+icon-search::before{
+  content: url("../images/icons/search.svg");
+  width: 19px;
+  height: 19px;
+}
+
+icon-heart::before{
+  content: url("../images/icons/heart.svg");
+  width: 18px;
+  height: 17px;
+}
+
+/* Декоративный логотип в шапке главной странице */
+
+.hero-logo {
+  height: 485px;
+  background-image: url(../images/zig-zag.png), url(../images/content-fon/mountans.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-size: contain, cover;
+  background-color: #82B3D3;
+  color: black;
+  background-position: center bottom;
 }
 
-.button:focus {
-  outline: none;
-  box-shadow: 0 0 1px rgba(8, 74, 228, 0.7);
+/*  Иконки */
+
+.icon-vk::before {
+  content: url("../images/icons/vk-focus.svg");
+  width: 24px;
+  height: 14px;
+  object-fit: contain;
 }
 
-.menu {
+.icon-telegram::before {
+  content: url(../images/icons/telegram-focus.svg);
+  width: 18px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.icon-youtube::before {
+  content: url(../images/icons/youtube-focus.svg);
+  width: 22px;
+  height: 17px;
+  object-fit: contain;
+}
+
+.icon-html::before {
+  content: url("../images/brand=htmlacademy.svg");
+  width: 22px;
+  height: 17px;
+  object-fit: contain;
+}
+
+.advantages, .services{
+  text-align: center;
+}
+
+.mailing {
+  color: #fff;
+}
+
+.mailing-item {
+  background-image: url(../images/content-fon/subscribe.jpg);
+  background-color: #82B3D3;
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: white;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.footer-page {
   display: flex;
+  width: 1200px;
+  height: 120px;
+  padding: 40px 70px 30px 70px;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* Шапка главной страницы */
-
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-
-
-
-
-
-page-header
-
-navigation
-
-navigation-logo
-
-page-header-logo
-
-
-navigation-list
-
-navigation-item
-
-navigation-link
-
-navigation-link-current
-
-navigation-user
-
-navigation-button
-
-main-index
-
-.hero {
-  body {
-    background-color: #000;
-    background-image: url(../images/content/welcome.svg), url(../images/content/foto1-mountans.jpg), url(../images/zig-zag.png);
-    background-size: cover, contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-}
+search-subtitle{
+  color: #FFF;
+  font-family: PT Sans, sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px;
+  width: 494.399px;
+  }
+  
+  navigation-link-text {
+    display: flex;
+    padding: 20px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+  }
+  
 
