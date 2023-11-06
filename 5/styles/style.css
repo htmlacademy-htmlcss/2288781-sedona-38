@@ -46,22 +46,42 @@ body {
   display: block;
 } */
 
+
+<!-- ------- header ------- -->
+
 header.main-header {
-  color: black;
-  background: #F2F2F2;
-  padding: 0px 40px;
+
 }
 
-.navigation-link {
-  color: black;
-  font-size: 20px;
-  line-height: 24px;
+.header {
+
+}
+
+
+.navigation-button {
+  background: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  min-width: 160px;  
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+
+
+.navigation-link {
   background-color: #F2F2F2;
   text-decoration: none;
-  text-transform: none;
 }
+
+
+<!-- ------- hero ------- -->
 
 .hero {
   color: #ffffff;
@@ -78,5 +98,11 @@ header.main-header {
 }
 
 
+<!-- ------- advantages ------- -->
+
+.advantages-list {
+
+}
 
 
+ -->
