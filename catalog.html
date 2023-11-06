@@ -32,7 +32,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-text navigation-text-current navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-text navigation-text-current navigation-link-current" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <!-- Список второй части меню -->
@@ -53,38 +53,38 @@
               <button class="navigation-button text-small" type="button" >
                 <span>Хочу сюда!</span>
               </button>
-            </a>           
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <!-- Основное содержимое каталога -->   
+    <!-- Основное содержимое каталога -->
     <main class="main-inner">
 
     <!-- Заголовок главной страницы (скрытый) -->
     <h1 class="main-inner-titul">Cайт поиска отелей в городе Седоне</h1>
 
       <div class="search-main"></div>
-      
+
         <!-- Первая секция - поиск гостиницы -->
-        <section class="search" data-test="search">          
+        <section class="search" data-test="search">
           <!-- Подзаголовок поисковой секции -->
-          <h2 class="search-subtitle">Гостиницы Седоны</h2>        
-          <ul class="breadcrumbs-list">            
+          <h2 class="search-subtitle">Гостиницы Седоны</h2>
+          <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">На главную страницу</span>
               </a>
-            </li>            
+            </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="catalog.html" aria-current="page">
                 <button type="button">Гостиницы</button>
               </a>
             </li>
-          </ul>                    
+          </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
-          <!-- Форма поисковых наборов -->            
+          <!-- Форма поисковых наборов -->
             <h3 class="visually-hidden">Поисковые формы</h3>
             <!-- Подзаголовок поисковых наборов (скрытый) -->
             <fieldset class="catalog-filter-infrastructure">
@@ -153,7 +153,7 @@
           </form>
         </section>
       </div>
-      <div>        
+      <div>
         <section class="catalog-results" data-test="catalog">
         <!-- Вторая секция - форма полей результатов -->
           <h2 class="catalog-results-subtitle" class="visually-hidden">Результат нашедших нужных гостиниц</h2>
@@ -325,8 +325,8 @@
         <!-- Третья секция - рассылка -->
         <section class="mailing" data-test="subscribe">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-          <!-- Подзаголовок секций "Рассылка" -->          
-          <p class="mailing-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>          
+          <!-- Подзаголовок секций "Рассылка" -->
+          <p class="mailing-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="mailing-form"  action="https://echo.htmlacademy.ru/" method="post" href="mailto:email@example.com">
             <label for="user-mail">Ваш e-mail</label>
             <input  type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
