@@ -81,7 +81,7 @@
   background-repeat: no-repeat;
   background-size: contain,cover ;
   background-position: center bottom;
-  background-color: #2672c3;
+
   color: #000;
 }
 /* advantage */

@@ -147,29 +147,20 @@ nav.navigation {
 
 .main {
   background-color: #82B3D3;
-  color: #fff;  
+  color: #fff;
 }
 
 <!-- ------- hero ------- -->
 
-.hero {
-  position: relative;
-	justify-content: center;
-	width: 1200px;
-	min-height: 485px;
-	background-color: #82B3D3;
-	background-image: url('../images/content-fon/mountans.ipg');
-	background-size: cover ;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .hero-logo {
-  width: 458px;
-  height: 352px;
-  position: relative;
+  height: 485px;
+  background-image: url("../images/zig-zag.png"), url("../images/content-fon/mountans.jpg");
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-color: #2672c3;
+  color: black;
+  background-position: center bottom;
 }
-
 
 <!-- ------- advantages ------- -->
 
