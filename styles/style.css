@@ -38,6 +38,9 @@ body {
   overflow: hidden;
 }
 
+
+<!-- ------- заголовки ------- -->
+
 h1 {
   font-size: 60px;
   line-height: 78px;
@@ -68,7 +71,7 @@ h4 {
 
 .main-header {
   color: black;
-  background-color: #f2f2f2;
+  background-color: blue;
 }
 
 nav.navigation {
@@ -145,10 +148,10 @@ nav.navigation {
 }
 
 
-.main {
+<!-- .main {
   background-color: #82B3D3;
   color: #fff;
-}
+} -->
 
 <!-- ------- hero ------- -->
 
@@ -174,6 +177,65 @@ nav.navigation {
   line-height: 35px;
   text-transform: uppercase;
 }
+
+
+<!-- ------- interest ------- -->
+
+.search-hotel-button{
+  background: #fff;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 96px 304px;
+  position: relative;
+}
+
+/* subscribe */
+
+.subscribe{
+  background-image: url("../images/subscribe-backgraund.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #2672c3;
+  color: #000;
+  text-align: center;
+}
+.subscribe-form-input{
+  border-radius: 4px 0 0 4px;
+  background: #F2F2F2;
+}
+.subscribe-button{
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* subscribe-light */
+
+.subscribe-light.subscribe{
+  background-image: none;
+  background-color: #fff;
+
+}
+
+/* footer */
+.footer-social{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-tel{
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
 
 
 
