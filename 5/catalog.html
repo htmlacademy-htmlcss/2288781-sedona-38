@@ -21,13 +21,15 @@
         <!-- Подзаголовок навигации (скрытый) -->
         <h2 class="visually-hidden">Навигация</h2>
         <!-- Основной логотип города Седоны-->
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="../images/brand-sedona.svg" width="140" height="70" type="image/svg+xml" alt="Логотип сайта городка Седона.">
         </a>
         <!-- Список первой части меню -->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-linkt" href="index.html">Главная</a>
+            <a class="navigation-linkt" href="index.html">
+              <span>Главная</span>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -330,18 +332,18 @@
       </div>
       <div>
         <!-- Третья секция - рассылка -->
-        <section class="mailing" data-test="subscribe">
+        <section class="mailing" data-test="subsribe">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <!-- Подзаголовок секций "Рассылка" -->
           <p class="mailing-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form class="mailing-form"  action="https://echo.htmlacademy.ru/" method="post" href="mailto:email@example.com">
-            <label for="user-mail">Ваш e-mail</label>
-            <input  type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
+          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post" href="#">
+            <p class="mailing-form-name">
+              <input  type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
+              <button class="button button-mailing" type="submit">Подписаться</button>
+            </p>
             <button class="mailing-button" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
-    </main>
 
     <footer class="main-footer" data-test="footer">
       <ul class="footer-social-list">

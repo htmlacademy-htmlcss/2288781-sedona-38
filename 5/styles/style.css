@@ -25,6 +25,12 @@ body {
     margin: 0;
 }
 
+.page-container {
+  with: 1200px;
+  margin: 0 auto;
+  background-color: "fff";
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -70,8 +76,7 @@ h4 {
 
 
 .main-header {
-  color: black;
-  background-color: blue;
+
 }
 
 nav.navigation {
@@ -185,41 +190,57 @@ nav.navigation {
   background: #fff;
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center; 
   padding: 96px 304px;
   position: relative;
+  border: none;
 }
 
-/* subscribe */
 
-.subscribe{
-  background-image: url("../images/subscribe-backgraund.jpg");
+<!-- ------- mailing ------- -->
+
+.mailing{
+  background-image: url("../images/content-fon/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-color: #2672c3;
-  color: #000;
+  color: #fff;
   text-align: center;
+  padding: 96px 258px 104px
 }
-.subscribe-form-input{
+
+.mailing-form-input{
   border-radius: 4px 0 0 4px;
   background: #F2F2F2;
 }
-.subscribe-button{
+.mailing-button{
   font-size: 20px;
   line-height: 36px;
   border-radius: 0 4px 4px 0;
+  background-repeat: no-repeat;
 }
 
-/* subscribe-light */
-
-.subscribe-light.subscribe{
-  background-image: none;
+.mailing-subscribe{
+  background-image:  url("../images/content-fon/subscribe.jpg");
   background-color: #fff;
-
+  background-size: cover;
 }
 
-/* footer */
-.footer-social{
+.mailing-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
+<!-- ------- mailing ------- --> 
+
+.main-footer{
   list-style: none;
   padding: 0;
   margin: 0;
