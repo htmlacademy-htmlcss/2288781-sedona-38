@@ -28,7 +28,7 @@
         <!-- Список первой части меню -->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-text navigation-link-current" aria-current="page">Главная</a>
+            <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -38,23 +38,26 @@
           </li>
         </ul>
         <!-- Список второй части меню -->
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link icon-search" href="#">
+        <ul class="navigation-list-user">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user icon-search" href="#">
               <span class="visually-hidden">Поиск</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 19 19" fill="none">
+                <path d="M18.8928 17.0083L15.1928 13.3287C16.1928 12.0359 16.8928 10.3453 16.8928 8.4558C16.8928 4.08011 13.2928 0.5 8.89282 0.5C4.49282 0.5 0.892822 4.17956 0.892822 8.55525C0.892822 12.9309 4.49282 16.511 8.89282 16.511C10.6928 16.511 12.3928 15.9144 13.7928 14.8204L17.4928 18.5L18.8928 17.0083ZM8.89282 14.5221C5.59282 14.5221 2.89282 11.837 2.89282 8.55525C2.89282 5.27348 5.59282 2.5884 8.89282 2.5884C12.1928 2.5884 14.8928 5.27348 14.8928 8.55525C14.8928 11.837 12.1928 14.5221 8.89282 14.5221Z" fill="black"/>
+              </svg>
             </a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-              <path d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z" fill="black"/>
-            </svg>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link icon-heart" href="#">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user icon-heart" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="user-favorite-count">12</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 19 17" fill="none">
+                <path d="M9.29282 17C8.99282 17 8.69282 16.9 8.49282 16.6C3.09282 10.5 1.79282 9.1 1.49282 8.7C0.792822 7.8 0.392822 6.6 0.392822 5.4C0.392822 2.4 2.79282 0 5.89282 0C7.19282 0 8.39282 0.5 9.39282 1.3C10.3928 0.5 11.6928 0 12.8928 0C15.8928 0 18.3928 2.4 18.3928 5.4C18.3928 6.7 17.8928 7.9 17.0928 8.8L10.0928 16.7C9.89282 16.9 9.69282 17 9.29282 17ZM3.29282 7.5C3.59282 7.9 6.79282 11.5 9.39282 14.4L15.5928 7.4C16.0928 6.9 16.2928 6.2 16.2928 5.4C16.2928 3.6 14.7928 2.1 12.9928 2.1C11.9928 2.1 10.9928 2.6 10.2928 3.4C9.99282 3.7 9.69282 3.8 9.39282 3.8C9.09282 3.8 8.79282 3.6 8.59282 3.4C7.89282 2.6 6.89282 2.1 5.89282 2.1C4.09282 2.1 2.59282 3.6 2.59282 5.4C2.49282 6.3 2.89282 7 3.29282 7.5C3.19282 7.5 3.19282 7.5 3.29282 7.5Z" fill="black"/>
+              </svg>
+              <span class="user-favorite-count rectangle">12</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">
+          <li class="navigation-item-user">
+            <a class="navigation-link-user" href="catalog.html">
               <button class="navigation-button type="button" >
                 <span>Хочу сюда!</span>
               </button>
@@ -181,10 +184,10 @@
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
         <!-- Подзаголовок секций "Рассылка" -->
         <p class="mailing-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post" href="mailto:email@example.com">
+        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post" href="#">
           <p class="mailing-form-name">
-            <label for="user-mail">Ваш e-mail</label>
             <input  type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
+            <button class="button button-mailing" type="submit">Подписаться</button>
           </p>
           <button class="mailing-button" type="submit">Подписаться</button>
         </form>
