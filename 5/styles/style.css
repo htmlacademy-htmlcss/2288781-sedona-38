@@ -20,15 +20,13 @@ body {
     font-style: normal;
     font-size: 22px;
     line-height: 26px;
-    color: #333333;
-    background-color: #F2F2F2;
-    margin: 0;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 .page-container {
-  with: 1200px;
+  width: 1200px;
   margin: 0 auto;
-  background-color: "fff";
 }
 
 .visually-hidden {
@@ -44,45 +42,11 @@ body {
   overflow: hidden;
 }
 
+/* header */
 
-<!-- ------- заголовки ------- -->
-
-h1 {
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 30px;
-  line-height:36px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 24px;
-  line-height:28px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 24px;
-  line-height:28px;
-  font-weight: 700;
-}
-
-
-<!-- ------- header ------- -->
-
-
-.main-header {
-
-}
-
-nav.navigation {
-  background: #fff;
+nav.main-navigation {
+  background: #ffffff;
   display: flex;
-	align-items: start;
 	padding: 0 70px;
 	position: relative;
 	z-index: 1;
@@ -93,12 +57,17 @@ nav.navigation {
   height: 70px;
 }
 
+.main-header-logo img {
+  position: relative;
+  z-index: 1;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -140,6 +109,7 @@ nav.navigation {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .navigation-button:hover,
@@ -152,17 +122,11 @@ nav.navigation {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-
-<!-- .main {
-  background-color: #82B3D3;
-  color: #fff;
-} -->
-
-<!-- ------- hero ------- -->
+/* hero */
 
 .hero-logo {
   height: 485px;
-  background-image: url("../images/zig-zag.png"), url("../images/content-fon/mountans.jpg");
+  background-image: url("../images/content-fon/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
   background-color: #2672c3;
@@ -170,21 +134,16 @@ nav.navigation {
   background-position: center bottom;
 }
 
-<!-- ------- advantages ------- -->
-
-.advantages-list {
-  text-align: center;
-}
+/* advantages */
 
 .advantages-title {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 32px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-
-<!-- ------- interest ------- -->
+/* interest */
 
 .search-hotel-button{
   background: #fff;
@@ -194,14 +153,13 @@ nav.navigation {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center; 
+  text-align: center;
   padding: 96px 304px;
   position: relative;
   border: none;
 }
 
-
-<!-- ------- mailing ------- -->
+/* mailing */
 
 .mailing{
   background-image: url("../images/content-fon/subscribe.jpg");
@@ -211,18 +169,29 @@ nav.navigation {
   background-color: #2672c3;
   color: #fff;
   text-align: center;
-  padding: 96px 258px 104px
+  padding: 96px 258px 104px;
+  justify-content: center;
 }
 
 .mailing-form-input{
   border-radius: 4px 0 0 4px;
   background: #F2F2F2;
 }
-.mailing-button{
+.button-mailing{
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
   border-radius: 0 4px 4px 0;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+  background: #82b3d3;
+  padding: 8px 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .mailing-subscribe{
@@ -237,22 +206,35 @@ nav.navigation {
   text-transform: uppercase;
 }
 
-
-<!-- ------- mailing ------- --> 
+/* footer */
 
 .main-footer{
+  box-sizing: border-box;
+  background: #fff;
+  min-height: 120px;
+  position: relative;
   list-style: none;
-  padding: 0;
+  padding: 70px 40px 70px 30px;
   margin: 0;
 }
 
-.footer-tel{
-  color: #000;
+
+
+.text-phone{
+  color: black;
   font-size: 40px;
-  font-style: normal;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 331px;
+  min-height: 40px;
+}
+
+.logo-htmlacademy{
+  min-width: 115px;
+  min-height: 33px;
 }
 
 
@@ -262,6 +244,10 @@ nav.navigation {
 
 
 <!-- ------- catalog-page ------- -->
+
+.main-inner{
+
+}
 
 <!-- ------- catalog-page - search  ------- -->
 
@@ -432,4 +418,4 @@ nav.navigation {
 .pagination-next:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #F2F2F2;
-}
+} -->
