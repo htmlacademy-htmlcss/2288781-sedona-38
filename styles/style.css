@@ -22,7 +22,6 @@ body {
     line-height: 26px;
     color: #333333;
     background-color: #F2F2F2;
-    margin: 0;
 }
 
 .page-container {
@@ -74,9 +73,8 @@ h4 {
 
 <!-- ------- header ------- -->
 
-
-.main-header {
-
+.main-header{
+  background: #68A2CA;
 }
 
 nav.navigation {
@@ -140,6 +138,7 @@ nav.navigation {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .navigation-button:hover,
@@ -194,7 +193,7 @@ nav.navigation {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center; 
+  text-align: center;
   padding: 96px 304px;
   position: relative;
   border: none;
@@ -211,18 +210,29 @@ nav.navigation {
   background-color: #2672c3;
   color: #fff;
   text-align: center;
-  padding: 96px 258px 104px
+  padding: 96px 258px 104px;
+  justify-content: center;
 }
 
 .mailing-form-input{
   border-radius: 4px 0 0 4px;
   background: #F2F2F2;
 }
-.mailing-button{
+.button-mailing{
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
   border-radius: 0 4px 4px 0;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+  background: #82b3d3;
+  padding: 8px 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .mailing-subscribe{
@@ -238,21 +248,37 @@ nav.navigation {
 }
 
 
-<!-- ------- mailing ------- --> 
+<!-- ------- footer ------- -->
+
+
 
 .main-footer{
+  box-sizing: border-box;
+  background: #fff;
+  min-height: 120px;
+  position: relative;
   list-style: none;
-  padding: 0;
+  padding: 70px 40px 70px 30px;
   margin: 0;
 }
 
-.footer-tel{
-  color: #000;
+
+
+.text-phone{
+  color: black;
   font-size: 40px;
-  font-style: normal;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 331px;
+  min-height: 40px;
+}
+
+.logo-htmlacademy{
+  min-width: 115px;
+  min-height: 33px;
 }
 
 
@@ -262,6 +288,10 @@ nav.navigation {
 
 
 <!-- ------- catalog-page ------- -->
+
+.main-inner{
+
+}
 
 <!-- ------- catalog-page - search  ------- -->
 
@@ -432,4 +462,4 @@ nav.navigation {
 .pagination-next:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #F2F2F2;
-}
+} -->
