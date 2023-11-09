@@ -20,14 +20,13 @@ body {
     font-style: normal;
     font-size: 22px;
     line-height: 26px;
-    color: #333333;
-    background-color: #F2F2F2;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 .page-container {
-  with: 1200px;
+  width: 1200px;
   margin: 0 auto;
-  background-color: "fff";
 }
 
 .visually-hidden {
@@ -43,44 +42,11 @@ body {
   overflow: hidden;
 }
 
+/* header */
 
-<!-- ------- заголовки ------- -->
-
-h1 {
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 30px;
-  line-height:36px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 24px;
-  line-height:28px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 24px;
-  line-height:28px;
-  font-weight: 700;
-}
-
-
-<!-- ------- header ------- -->
-
-.main-header{
-  background: #68A2CA;
-}
-
-nav.navigation {
-  background: #fff;
+nav.main-navigation {
+  background: #ffffff;
   display: flex;
-	align-items: start;
 	padding: 0 70px;
 	position: relative;
 	z-index: 1;
@@ -91,12 +57,17 @@ nav.navigation {
   height: 70px;
 }
 
+.main-header-logo img {
+  position: relative;
+  z-index: 1;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -151,17 +122,11 @@ nav.navigation {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-
-<!-- .main {
-  background-color: #82B3D3;
-  color: #fff;
-} -->
-
-<!-- ------- hero ------- -->
+/* hero */
 
 .hero-logo {
   height: 485px;
-  background-image: url("../images/zig-zag.png"), url("../images/content-fon/mountans.jpg");
+  background-image: url("../images/content-fon/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
   background-color: #2672c3;
@@ -169,21 +134,16 @@ nav.navigation {
   background-position: center bottom;
 }
 
-<!-- ------- advantages ------- -->
-
-.advantages-list {
-  text-align: center;
-}
+/* advantages */
 
 .advantages-title {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 32px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-
-<!-- ------- interest ------- -->
+/* interest */
 
 .search-hotel-button{
   background: #fff;
@@ -199,8 +159,7 @@ nav.navigation {
   border: none;
 }
 
-
-<!-- ------- mailing ------- -->
+/* mailing */
 
 .mailing{
   background-image: url("../images/content-fon/subscribe.jpg");
@@ -247,10 +206,7 @@ nav.navigation {
   text-transform: uppercase;
 }
 
-
-<!-- ------- footer ------- -->
-
-
+/* footer */
 
 .main-footer{
   box-sizing: border-box;
