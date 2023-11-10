@@ -277,8 +277,6 @@ li.services-item h2 {
   border: none;
 }
 
-
-
 /* ------- mailing ------- */
 
 .mailing{
@@ -326,7 +324,6 @@ li.services-item h2 {
   line-height: 36px;
   text-transform: uppercase;
 }
-
 
 /* ------- footer ------- */
 
@@ -389,7 +386,6 @@ li.services-item h2 {
   font-weight: 700;
   line-height: 78px;
 }
-
 
 /* ------- catalog-page / catalog-results  ------- */
 
@@ -528,3 +524,12 @@ li.services-item h2 {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #F2F2F2;
 } -->
+
+section.mailing {
+  
+}
+
+.mailing.mailing-subscribe-catalog p, h2 {
+  background-size: cover;
+  color: #000;
+}
