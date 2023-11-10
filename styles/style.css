@@ -241,7 +241,8 @@ section.services {
 }
 
 li.services-item.services-item-housing p,
-li.services-item.services-item-souvenirs p {
+li.services-item.services-item-souvenirs p,
+li.services-item.services-item-meal p {
   align-self: stretch;
   color: #333;
   font-size: 18px;
@@ -259,6 +260,9 @@ li.services-item h2 {
   height: auto;
 }
 
+.services-subtitul{
+  font-weight: 700;
+}
 
 
 /* ------- services ------- */
@@ -280,15 +284,21 @@ li.services-item h2 {
 /* ------- mailing ------- */
 
 .mailing{
-  background-image: url("../images/content-fon/subscribe.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #2672c3;
-  color: #fff;
+  color: white;
+  padding: 96px 258px 104px 258px;
+}
+
+.mailing-form-name {
+  box-sizing: border-box;
+  border-radius: 4px 0px;
+  padding: 12px 20px;
+  overflow: hidden;
+  color: #000000;
   text-align: center;
-  padding: 96px 258px 104px;
-  justify-content: center;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
 }
 
 .mailing-form-input{
@@ -323,6 +333,22 @@ li.services-item h2 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: white;
+}
+
+input#user-email {
+  font-size: 20px;
+  line-height: 36px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0 4px 4px 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background: #82b3d3;
+  padding: 8px 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 /* ------- footer ------- */
@@ -526,10 +552,10 @@ li.services-item h2 {
 } -->
 
 section.mailing {
-  
+
 }
 
-.mailing.mailing-subscribe-catalog p, h2 {
+.mailing-subscribe-catalog p, h2 {
   background-size: cover;
   color: #000;
 }
