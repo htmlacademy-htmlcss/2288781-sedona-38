@@ -21,12 +21,21 @@ body {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
-    background-color: #f2f2f2;
+    background: #ffffff;
+    margin: 0 auto;
+    height: 100%;
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
+div.page-container {
+  width: 1280px;
+  padding: 0px 40px;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100%;
+  background: #f2f2f2;
+  
 }
 
 .visually-hidden {
@@ -42,25 +51,40 @@ body {
   overflow: hidden;
 }
 
-
 /* ------- header ------- */
-
-.main-navigation {
-  background: #ffffff;
-  display: flex;
-	padding: 0 70px;
-	position: relative;
-	z-index: 1;
+.main-header {
+  width: 1200px;
+  height: 64px;
+  background-color: #ffffff;
+  color: #000;
 }
 
-.main-header-logo {
-  width: 140px;
-  height: 70px;
+.main-navigation {  
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.main-header-menu {
+  width: auto;
+  height: 64px;
+  display: block;  
+  /* gap: 30px;  */
+}
+
+a.main-header-logo {
+  fill: none;
+  aspect-ratio: auto 140/70;
+  margin: 0 0 30 0;
 }
 
 .main-header-logo img {
   position: relative;
-  z-index: 1;
+  z-index: 1;  
 }
 
 .navigation-link {
@@ -71,6 +95,8 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: capitalize;
+
+  
 }
 
 .navigation-link:hover,
@@ -125,16 +151,17 @@ body {
 
 }
 
-.gg-heart,
-.gg-heart::after {
+.icon-heart,
+.icon-heart::after {
     border: 2px solid;
+    color: #000;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     width: 10px;
     height: 8px;
     border-bottom: 0
 }
-.gg-heart {
+.icon-heart {
     box-sizing: border-box;
     position: relative;
     transform:
@@ -146,19 +173,19 @@ body {
         scale(var(--ggs,1));
     display: block
 }
-.gg-heart::after,
-.gg-heart::before {
+.icon-heart::after,
+.icon-heart::before {
     content: "";
     display: block;
     box-sizing: border-box;
     position: absolute
 }
-.gg-heart::after {
+.icon-heart::after {
     right: -9px;
     transform: rotate(90deg);
     top: 5px
 }
-.gg-heart::before {
+.icon-heart::before {
     width: 11px;
     height: 11px;
     border-left: 2px solid;
@@ -168,20 +195,25 @@ body {
 }
 
 /* ------- header - green round ------- */
-.user-favorite-count {
+/* .navigation-user-count {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
   border-radius: 10px;
   background: #7DB54F;
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 20px;
   text-align: center;
   text-decoration: none;
-  position: inherit;
-  display: flex;
-  padding: 22px 12px;
-  justify-content: center;
-  align-items: center;
 }
+
+.icon-heart-text {
+  content: "12";
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+} */
+
+
 
 /* ------- header - button ------- */
 .navigation-button {
@@ -213,14 +245,26 @@ body {
 
 /* ------- hero ------- */
 
-.hero-logo {
-  height: 485px;
-  background-image: url("../images/content-fon/hero-background.jpg");
+.hero {
+  background-image: url("../images/content-fon/mountans.jpg");
+  background-color: #f2f2f2;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain, cover;
-  background-color: #a426c3;
-  color: black;
   background-position: center bottom;
+  position: relative;  
+}
+
+.hero::after {
+  content: '';
+  width: 1200px;
+  height: 57px;
+  background-image: url("../images/zig-zag.png");  
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
 }
 
 
@@ -368,7 +412,7 @@ li.services-item h2 {
 
 /* ------- interest ------- */
 
-.modal {
+.modal [hidden] {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   inset: 0;
@@ -385,8 +429,13 @@ li.services-item h2 {
   max-height: 90px;
 }
 
-.
+.scroll-lock {
+  [добавить "крестик" как фон]
+}
 
+.visually-hidden {
+
+}
 
 
 /* ------- mailing ------- */
