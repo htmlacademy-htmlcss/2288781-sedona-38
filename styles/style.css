@@ -42,6 +42,7 @@ body {
   overflow: hidden;
 }
 
+
 /* ------- header ------- */
 
 .main-navigation {
@@ -90,6 +91,40 @@ body {
   width: 100%;
 }
 
+/* ------- header - icon search ------- */
+.icon-search {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+  margin-left: -4px;
+  margin-top: -4px;
+  color: #000000;
+}
+
+.icon-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px
+}
+
+/* ------- header - icon heart ------- */
+.icon-heart{
+
+}
+
 .user-favorite-count {
   border-radius: 10px;
   background: #7DB54F;
@@ -100,6 +135,8 @@ body {
   text-decoration: none;
 }
 
+
+/* ------- header - button ------- */
 .navigation-button {
   background: #756157;
   border-radius: 4px;
@@ -126,6 +163,7 @@ body {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+
 /* ------- hero ------- */
 
 .hero-logo {
@@ -137,6 +175,7 @@ body {
   color: black;
   background-position: center bottom;
 }
+
 
 /* ------- advantages ------- */
 
@@ -213,6 +252,7 @@ li.advantages-item-road {
   background-color: rgba(131, 179, 211, 0.20);
 }
 
+
 /* ------- services ------- */
 
 section.services {
@@ -264,9 +304,7 @@ li.services-item h2 {
   font-weight: 700;
 }
 
-
-/* ------- services ------- */
-
+/* ------- services - button ------- */
 .search-hotel-button{
   background: #ffffff;
   font-size: 20px;
@@ -282,6 +320,17 @@ li.services-item h2 {
 }
 
 /* ------- mailing ------- */
+
+section.mailing {
+
+}
+
+.mailing-subscribe-catalog p, h2 {
+  background-size: cover;
+  color: #000;
+}
+
+
 
 .mailing{
   background-repeat: no-repeat;
@@ -351,6 +400,7 @@ input#user-email {
   position: relative;
 }
 
+
 /* ------- footer ------- */
 
 .main-footer{
@@ -379,6 +429,8 @@ input#user-email {
   min-width: 115px;
   min-height: 33px;
 }
+
+
 
 /* ------- catalog-page ------- */
 
@@ -484,7 +536,6 @@ input#user-email {
 	margin: 0 auto;
 	margin-bottom: 156px;
 }
-
 .pagination-list {
 	margin: 0;
 	padding: 0;
@@ -493,7 +544,6 @@ input#user-email {
 	gap: 8px;
 	list-style: none;
 }
-
 .pagination-link {
 	min-width: 60px;
 	height: 60px;
@@ -550,12 +600,3 @@ input#user-email {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #F2F2F2;
 } -->
-
-section.mailing {
-
-}
-
-.mailing-subscribe-catalog p, h2 {
-  background-size: cover;
-  color: #000;
-}

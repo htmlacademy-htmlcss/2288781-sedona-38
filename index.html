@@ -13,8 +13,7 @@
 
     <div class="page-container">
 
-      <!-- /*    Шапка    */ -->
-
+      <!-- /*    header    */ -->
       <header class="main-header" data-test="header">
         <h1 class="visually-hidden">Меню главной страницы</h1>
         <nav class="main-navigation">
@@ -27,7 +26,7 @@
               <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
+              <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -37,9 +36,6 @@
             <li class="navigation-item-user">
               <a class="navigation-link-user icon-search" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 19 19" fill="none">
-                  <path d="M18.8928 17.0083L15.1928 13.3287C16.1928 12.0359 16.8928 10.3453 16.8928 8.4558C16.8928 4.08011 13.2928 0.5 8.89282 0.5C4.49282 0.5 0.892822 4.17956 0.892822 8.55525C0.892822 12.9309 4.49282 16.511 8.89282 16.511C10.6928 16.511 12.3928 15.9144 13.7928 14.8204L17.4928 18.5L18.8928 17.0083ZM8.89282 14.5221C5.59282 14.5221 2.89282 11.837 2.89282 8.55525C2.89282 5.27348 5.59282 2.5884 8.89282 2.5884C12.1928 2.5884 14.8928 5.27348 14.8928 8.55525C14.8928 11.837 12.1928 14.5221 8.89282 14.5221Z" fill="black"/>
-                </svg>
               </a>
             </li>
             <li class="navigation-item-user">
@@ -58,55 +54,65 @@
         </nav>
       </header>
 
-      <!-- /* Содержимое главной страницы */ -->
-
+      <!-- /*    main    */ -->
       <main class="main" data-test="main">
 
         <h1 class="visually-hidden">Cайт поиска отелей в городе Седоне</h1>
 
-
-        <!-- /* Первая секция - Hero */ -->
-
+        <!-- /* Первая секция - hero */ -->
         <section class="hero" data-test="hero">
           <h2 class="visually-hidden">Добро пожаловать в великолепный город Седона!</h2>
-          <div class="hero-logo">
-            <img class="hero-welcome" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" type="image/svg+xml">
-          </div>
+          <p class="visually-hidden">Welcome to the gorgeous Sedona, because the Grand Canyon sucks!</p>
+          <img class="hero-logo hero-welcome" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" type="image/svg+xml" aria-hidden="true">
         </section>
 
-        <!-- /* Вторая секция - Преимущества */ -->
-
+        <!-- /* Вторая секция - advantages */ -->
         <section class="advantages" data-test="advantages">
           <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-            <ul class="advantages-list">
-              <li class="advantages-item advantages-item-homes advantages-item-text">
-                <h3 class="advantages-title-cards">Настоящий городок</h3>
-                <p class="advantages-title-cards-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <img class="advantages-homes" src="images/city.jpg" width="800" height="385" alt="Национальные флаги на фоне уютных домов в окрестностях города Седоны.">
-              </li>
-              <li class="advantages-item advantages-item-square">
-                <h3>Небольшая площадь</h3>
-                <p>Все достопримечательности находятся очень близко</p>
-              </li>
-              <li class="advantages-item advantages-item-road">
-                <h3>Красивая дорога</h3>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li class="advantages-item advantages-item-tourist">
-                <h3>Мало туристов</h3>
-                <p>Большинство едет в Гранд Каньон и толпится там</p>
-              </li>
-              <li class="advantages-item advantages-item-bridge advantages-item-text">
-                <h3>Там есть мост Дьявола</h3>
-                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                <img src="images/canyon.jpg" width="800" height="385" alt="Красивый каньон и скалы у моста Дьявола в окрестностях Седоны.">
-              </li>
-            </ul>
+          <article>
+            <div>
+              <ul class="advantages-list">
+                <li class="advantages-item advantages-item-homes advantages-item-text">
+                  <h3 class="advantages-title-cards">Настоящий городок</h3>
+                  <p class="advantages-title-cards-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </li>
+                <li>
+                  <img class="advantages-homes" src="images/city.jpg" width="800" height="385" alt="Национальные флаги на фоне уютных домов в окрестностях города Седоны.">
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li class="advantages-item advantages-item-square">
+                  <h3>Небольшая площадь</h3>
+                  <p>Все достопримечательности находятся очень близко</p>
+                </li>
+                <li class="advantages-item advantages-item-road">
+                  <h3>Красивая дорога</h3>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </li>
+                <li class="advantages-item advantages-item-tourist">
+                  <h3>Мало туристов</h3>
+                  <p>Большинство едет в Гранд Каньон и толпится там</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <img src="images/canyon.jpg" width="800" height="385" alt="Красивый каньон и скалы у моста Дьявола в окрестностях Седоны.">
+                </li>
+                <li>
+                  <h3>Там есть мост Дьявола</h3>
+                  <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </li>
+              </ul>
+            </div>
+          </article>
         </section>
 
-        <!-- /* Третья секция - Инфраструктура */ -->
-
+        <!-- /* Третья секция - services */ -->
         <section class="services">
           <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="services-text">Опытный персонал и качественное обслуживание!</p>
@@ -138,8 +144,7 @@
           </div>
         </section>
 
-        <!-- /* Четвертая секция - Интерес */ -->
-
+        <!-- /* Четвертая секция - interest */ -->
         <section class="interest" data-test="search">
           <h2>Заинтересовались?</h2>
           <form>
@@ -148,7 +153,7 @@
           </form>
         </section>
 
-        <!-- /* Пятая секция - Рассылка */ -->
+        <!-- /* Пятая секция - subsribe */ -->
         <section class="mailing mailing-subscribe" data-test="subsribe">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -161,8 +166,7 @@
         </section>
       </main>
 
-      <!-- /* Футор */ -->
-
+      <!-- /* footer */ -->
       <footer class="main-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
