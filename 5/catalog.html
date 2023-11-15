@@ -20,18 +20,18 @@
         <h1 class="visually-hidden">Меню главной страницы</h1>
         <nav class="main-navigation">
           <h2 class="visually-hidden">Навигация</h2>
-          <a class="main-header-logo" aria-current="page">
-            <img src="images/brand-sedona.svg" width="140" height="70" type="image/svg+xml" alt="Логотип сайта городка Седона.">
-          </a>
           <ul class="navigation-list">
+            <a class="navigation-logo" href="index.html">
+              <img src="images/brand-sedona.svg" role="img" width="140" height="70" type="image/svg+xml" aria-label="Логотип города Седона">
+            </a>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" aria-current="page" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list-user">
@@ -43,38 +43,39 @@
             <li class="navigation-item-user">
               <a class="navigation-link-user icon-heart" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 19 17" fill="none">
-                  <path d="M9.29282 17C8.99282 17 8.69282 16.9 8.49282 16.6C3.09282 10.5 1.79282 9.1 1.49282 8.7C0.792822 7.8 0.392822 6.6 0.392822 5.4C0.392822 2.4 2.79282 0 5.89282 0C7.19282 0 8.39282 0.5 9.39282 1.3C10.3928 0.5 11.6928 0 12.8928 0C15.8928 0 18.3928 2.4 18.3928 5.4C18.3928 6.7 17.8928 7.9 17.0928 8.8L10.0928 16.7C9.89282 16.9 9.69282 17 9.29282 17ZM3.29282 7.5C3.59282 7.9 6.79282 11.5 9.39282 14.4L15.5928 7.4C16.0928 6.9 16.2928 6.2 16.2928 5.4C16.2928 3.6 14.7928 2.1 12.9928 2.1C11.9928 2.1 10.9928 2.6 10.2928 3.4C9.99282 3.7 9.69282 3.8 9.39282 3.8C9.09282 3.8 8.79282 3.6 8.59282 3.4C7.89282 2.6 6.89282 2.1 5.89282 2.1C4.09282 2.1 2.59282 3.6 2.59282 5.4C2.49282 6.3 2.89282 7 3.29282 7.5C3.19282 7.5 3.19282 7.5 3.29282 7.5Z" fill="black"/>
-                </svg>
-                <span class="user-favorite-count">12</span>
+                <span class="navigation-link-user-statistics">12</span>
               </a>
             </li>
             <li class="navigation-item-user">
-              <a class="navigation-link-user navigation-button" href="#">Хочу сюда!</a>
+              <a class="navigation-link-user navigation-want-come-here" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      /* ------- main ------- */
+      <!-- /* ------- main ------- */ -->
       <main class="main-inner">
 
-      <h1 class="main-inner-titul">Cайт поиска отелей в городе Седоне</h1>
-      <div class="search-main"></div>
+      <h1 class="main-inner-titul visually-hidden">Cайт поиска отелей в городе Седоне</h1>
+      
+      <div class="main-inner-search"></div>
 
         <!-- Первая секция - search -->
         <section class="search" data-test="search">
-          <h2 class="search-subtitle">Гостиниц Седоны</h2>
+          <h2 class="search-subtitle">Гостиницы Седоны</h2>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <button class="breadcrumbs-button breadcrumbs-icon-home" href="index.html" type="button">
                 <span class="visually-hidden">На главную страницу</span>
-              </a>
+              </button>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalog.html" aria-current="page">
-                <button type="button">Гостиницы</button>
-              </a>
+              <button class="breadcrumbs-button breadcrumbs-icon-arrow-bigger" href="index.html" type="button">
+                <span class="visually-hidden">На каталог</span>
+              </button>
+              <a class="breadcrumbs-link" aria-current="page" type="button">
+                <span>Гостиницы</span>
+              </a>              
             </li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
@@ -83,21 +84,32 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control" for="swimming-pool">
                     Бассейн
-                    <input class="control-input" type="checkbox" name="swimming-pool" checked>                    
+                    <input
+                      type="checkbox"
+                      id="swimming-pool"
+                      name="control-filter"
+                      checked>                    
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                   <label class="control">
+                  <label class="control" for="parking-space">
                     Парковка
-                    <input class="control-input" type="checkbox" name="parking-space" checked>                    
+                    <input
+                      type="checkbox"
+                      id="parking-space"
+                      name="control-filter"
+                      checked>                 
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control" for="wi-fi">
                     Wi-Fi
-                    <input class="control-input" type="checkbox" name="wi-fi">                    
+                    <input
+                      type="checkbox"
+                      id="wi-fi"
+                      name="control-filter">                    
                   </label>
                 </li>
               </ul>
@@ -106,21 +118,34 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control" for="product-group">
                     Гостиница
-                    <input class="control-input" type="radio" name="product-group" value="hotel" checked>                    
+                    <input                      
+                      type="radio"
+                      id="product-group"
+                      name="control-filter"
+                      value="hotel"
+                      checked>                    
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control" for="product-group">
                     Мотель
-                    <input class="control-input" type="radio" name="product-group" value="motel">                    
+                    <input                      
+                      type="radio"
+                      id="product-group"
+                      name="control-filter"
+                      value="motel">                    
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control" for="product-group">
                     Аппартаменты
-                    <input class="control-input" type="radio" name="product-group" value="apartments">                    
+                    <input
+                      type="radio"
+                      id="product-group"
+                      name="control-filter"
+                      value="apartments">                    
                   </label>
                 </li>
               </ul>
@@ -128,17 +153,48 @@
             <fieldset class="catalog-filter-price">
               <object>
                 <legend class="catalog-filter-price">Стоимость, ₽:</legend>
-                <input type="number" name="min-price" id="min-price-field" value="0" placeholder="от">
-                <span class="filter-hotel-price-min">от</span>
-                <input type="number" name="max-price" id="max-price-field" value="9000" placeholder="до">
-                <span class="filter-hotel-price-max">до</span>
+                <input
+                  type="number"
+                  id="min-price-field"
+                  name="min-price"
+                  min="0"
+                  value="0"
+                  placeholder="от">
+                <label class="filter-hotel-price-min" for="min-price-field">от</label>
+                <input
+                  type="number"
+                  id="max-price-field"
+                  name="max-price"
+                  max="9000"
+                  value="9000"
+                  placeholder="до">
+                <label class="filter-hotel-price-max" for="max-price-field">до</label>
               </object>
-              <div class="catalog-range-input">
-                <input type="range" class="range-min" min="0" max="9000" value="5000" step="10">
-              </div>
+              <form class="catalog-range-filter" for="range-min">
+                <input
+                  type="range"
+                  id="range-min"
+                  name="price-range-min"               
+                  min="0"
+                  max="9000"
+                  value="5000"
+                  step="10">
+              </form>
             </fieldset>
-            <input class="catalog-apply" type="submit" value="Применить">
-            <input class="catalog-throw-off" type="reset" value="Сбросить">
+            <button for="submit-catalog-apply">
+              <input
+                type="submit"
+                id="submit-catalog-apply"
+                name="catalog-apply"
+                value="Применить">
+            </button>
+            <button for="reset-catalog-apply">
+              <input
+                type="reset"
+                id="reset-catalog-apply"
+                name="catalog-throw-off"
+                value="Сбросить">
+            </button>
           </form>
         </section>
       </div>
@@ -150,9 +206,10 @@
           <h2 class="visually-hidden">Результат нашедших нужных гостиниц</h2>
 
           <div>
-            <p class="catalog-results-text">Найдено гостиниц:
+            <form class="catalog-results-text">
+              <span>Найдено гостиниц:</span>
               <span>38</span>
-            </p>
+            </form>
             <form class="catalog-results-select">
               <select class="catalog-results-select" name="sorting" aria-label="Сортировка">
                 <option value="cheap" selected>Сначала дешевые</option>
@@ -185,7 +242,7 @@
               <ul class="hotel-cards-list">
                 <li class="hotel-cards-item">
                     <a class="hotel-cards-link" href="#" tabindex="-1">
-                      <img  src="images/catalog/hotel-1.jpg" width="" height="" alt="Гостиница Amara-Resort-and-Spa - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
+                      <img  src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Гостиница Amara-Resort-and-Spa - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
                     </a>
                     <a class="hotel-cards-subtitul" tabindex="-1">
                       <h3>Amara Resort & Spa</h3>
@@ -202,63 +259,105 @@
                 
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
-                    <img src="images/catalog/hotel-2.jpg" alt="Гостиница Villas-at-Poco-Diablo - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
+                    <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Гостиница Villas-at-Poco-Diablo - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
                     <h4 class="hotel-cards-subtitul">Villas-at-Poco-Diablo</h4>
                   </a>
                   <p class="hotel-cards-text">Гостиница</p>
                   <p class="hotel-cards-price">От 5000 ₽</p>
-                  <a>
-                    <input class="hotel-cards-more-detailed" type="submit" href="#" value="Подробнее">
+                  <a for="more-detailed">
+                    <input
+                      type="submit"
+                      id="more-detailed"
+                      name="hotel-cards-more-detailed"
+                      href="#"
+                      value="Подробнее">
                   </a>
-                  <a>
-                    <input class="hotel-cards-favourites" type="submit" href="#" value="В избранное">
+                  <a for="favourites">
+                    <input
+                      type="submit"
+                      id="favourites"
+                      name="hotel-cards-favourites"
+                      href="#"
+                      value="В избранное">
                   </a>
                   <p class="stars-4">
                     <span class="visually-hidden">Четырехзвездочный отель</span>
                   </p>
-                  <a>
-                    <input class="hotel-cards-rating" type="submit" value="Рейтинг: 9.2">
+                  <a for="rating">
+                    <input
+                      type="submit"
+                      id="rating"
+                      name="hotel-cards-rating"                   
+                      value="Рейтинг: 9.2">
                   </a>
                 </li>
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
-                    <img src="images/catalog/hotel-3.jpg" alt="Гостиница Desert Quail Inn - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
+                    <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Гостиница Desert Quail Inn - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
                     
                     <h4 class="hotel-cards-subtitul">Desert Quail Inn</h4>
                   </a>
                   <p class="hotel-cards-text">Гостиница</p>
                   <p class="hotel-cards-price">От 2500 ₽</p>
-                  <a>
-                    <input class="hotel-cards-more-detailed" type="submit" href="#" value="Подробнее">
+                  <a for="more-detailed">
+                    <input
+                      type="submit"
+                      id="more-detailed"
+                      name="hotel-cards-more-detailed"
+                      href="#"
+                      value="Подробнее">
                   </a>
-                  <a>
-                    <input class="hotel-cards-favourites" type="submit" href="#" value="В избранное">
+                  <a for="favourites">
+                    <input
+                      type="submit"
+                      id="favourites"
+                      name="hotel-cards-favourites"
+                      href="#"
+                      value="В избранное">
                   </a>
                   <p class="stars-4">
                     <span class="visually-hidden">Трехзвездочный отель</span>
                   </p>
-                  <a>
-                    <input class="hotel-cards-rating" type="submit" value="Рейтинг: 6.9">
+                  <a for="rating"> 
+                    <input
+                      type="submit"
+                      id="rating"
+                      name="hotel-cards-rating"
+                      value="Рейтинг: 6.9">
                   </a>
                 </li>
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
-                    <img src="images/catalog/hotel-2.jpg" alt="Гостиница Villas-at-Poco-Diablo - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
+                    <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Гостиница Villas-at-Poco-Diablo - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
                     <h4 class="hotel-cards-subtitul">GreenTree Inn</h4>
                   </a>
                   <p class="hotel-cards-text">Гостиница</p>
                   <p class="hotel-cards-price">От 1500 ₽</p>
-                  <a>
-                    <input class="hotel-cards-more-detailed" type="submit" href="#" value="Подробнее">
+                  <a for="more-detailed">
+                    <input
+                      type="submit"
+                      id="more-detailed"
+                      name="hotel-cards-more-detailed"
+                      href="#"
+                      value="Подробнее">
                   </a>
-                  <a>
-                    <input class="hotel-cards-favourites" type="submit" href="#" value="В избранное">
+                  <a for="favourites">
+                    <input
+                      type="submit"
+                      id="favourites"
+                      name="hotel-cards-favourites"
+                      href="#"
+                      value="В избранное">
                   </a>
                   <p class="stars-4">
                     <span class="visually-hidden">Двухзвездочный отель</span>
                   </p>
-                  <a>
-                    <input class="hotel-cards-rating" type="submit" value="Рейтинг: 5.0">
+                  <a for="rating">
+                    <input
+                      type="submit"
+                      id="rating"
+                      name="hotel-cards-rating"
+                      value="Рейтинг: 5.0">
                   </a>
                 </li>
               </ul>
@@ -306,47 +405,50 @@
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post" href="#">
-            <a class="mailing-form-name">
-              <input  type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
-              <button class="button button-mailing" type="submit">Подписаться</button>
+            <a class="mailing-form-name" for="user-email-button">
+              <input
+                type="email"
+                id="user-email-button"
+                name="user-email"
+                placeholder="Ваш e-mail"
+                required>
+              <button class="button button-mailing" type="submit" for="user-email">Подписаться</button>
             </a>
           </form>
         </section>
 
       </main>
 
+        <!-- /* footer */ -->
         <footer class="main-footer" data-test="footer">
+          
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://vk.com/htmlacademy">
-                <img src="images/icons/vk-focus.svg" width="24" height="14" alt="Российская социальная сеть «ВКонтакте».">
-                <span class="visually-hidden">ВКонтакте</span>
+              <a class="link-vk" type="button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Перейти в ВКонтакт</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://t.me/htmlacademy">
-                <img src="images/icons/telegram-focus.svg" width="18" height="16" alt="Мессенджер «Telegram».">
-                <span class="visually-hidden">Telegram</span>
+              <a class="link-telegram" type="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Перейти в Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="images/icons/youtube-focus.svg" width="22" height="17" alt="Видеохостинг Youtube.">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-            <li class="footer-phone-item">
-              <a class="footer-phone-link" class="text-phone" href="tel:+7(812)812-12-12">
-                <span>+7(812)812-12-12</span>
-              </a>
-            </li>
-            <li class="footer-logo-item">
-              <a class="footer-logo-link" class="logo-html" href="https://htmlacademy.ru/">
-                <img src="images/brand=htmlacademy.svg" width="114.9" height="32.9" alt="Видеохостинг Youtube.">
-                <span class="visually-hidden">HTML Academy</span>
+              <a class="link-youtube" type="button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Перейти в Youtube</span>
               </a>
             </li>
           </ul>
+          
+          <address class="item-phone" >
+            <a class="link-phone" href="tel:+7(812)812-12-12">
+            </a>
+          </address>
+          
+          <a class="link-html" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Перейти в HTML Academy</span>
+          </a>
+
         </footer>
 
     </div>
