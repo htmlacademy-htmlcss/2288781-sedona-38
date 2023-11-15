@@ -18,35 +18,36 @@ html {
 }
 
 body {
-    /* Texts/Text basic */
-    font-family: "PT Sans", sans-serif; 
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    line-height: 26px;
+  display: flex;
+  justify-content: center;
 
-    width: auto;
-    min-height: 100%;
-    color: #000;
-    background-color: #f2f2f2;
+  width: auto;
+  min-height: 100%;
+  color: #000;
+  background-color: #f2f2f2;
 
-    background-repeat: no-repeat;
-    background-position: top center;
+  /* Texts/Text basic */
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 0;
 }
 
 div.page-container {
   width: 1200px;
   height: 100%;
   background: rgba(242, 242, 242, 0.80);
+  padding: 0px 40px;
 
-display: inline-flex;
-padding: 0px 40px;
-background: #F2F2F2;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .visually-hidden {
@@ -62,61 +63,70 @@ align-items: flex-start;
   overflow: hidden;
 }
 
-/* ------- header ------- */
+
+/* ------- !!!header!!! ------- */
+
 header {
   min-height: 100%;
-  display: block;
+  flex-grow: 1;
 }
-
-hearder.page-header {
-  width: auto;
-  height: auto;
-  background: #83B3D31F;  
-  display: block;
-}
-
-.page-header-logo {
-  display: flex;
-  width: 1200px;
+.page-header {
+  width: 1200;
   height: 64px;
+  background: #ffffff;
+
   padding: 0px 70px;
-  background: #FFF;
-  justify-content: flex-start;
+
+  display: flex;
+  justify-content: space-between;
   align-items: flex-start;
-  margin: 0 30px 0 0;
-  position: relative;
-  z-index: -1;
+  flex-shrink: 0;
 }
 
+.page-index {
+  display: flex;
+  height: 64px;
+  align-items: flex-start;
+}
+
+/* ------- header / logo ------- */
+
+}
 .logo {
-  min-width: 140px;
-  min-height: 70px;
-  background-image: url("../images/brand-sedona.svg");  
+  width: 140px;
+  height: 70px;
+  background-image: url("../images/brand-sedona.svg");
+
+  position: absolute;
+  box-sizing: border-box;
+  padding-right: -2;
+  padding-bottom: -6;
+  margin-right: 28px;
+
+  display: flex;
+  flex-grow: 1;
 }
 
-
-/* ------- navigation / header ------- */
-
-navigation {
+/* ------- header / menu ------- */
+nav {
   height: 100%;
 }
-
 .main-navigation {
   display: flex;
   justify-content: space-between;
 }
+
 .navigation-list {
-  height: 64px;
   list-style: none;
   margin: 0;
-  padding: 0px 70px;
   display: flex;
+  align-items: center;
   flex-grow: 0;
 }
 .navigation-item {
   padding: 20px 16px;
-  display: flex; 
-  align-items: center;  
+  display: flex;
+  align-items: center;
   align-self: stretch;
 }
 .navigation-link {
@@ -153,7 +163,7 @@ navigation {
 .navigation-item-user {
   display: list-item;
   text-align: center;
-  align-items: center;  
+  align-items: center;
   align-self: stretch;
 }
 .navigation-link-user {
@@ -221,7 +231,7 @@ navigation {
 /* ------- header / button ------- */
 .navigation-button {
   content: "Хочу сюда!";
-  width: 160px;  
+  width: 160px;
   height: 36px;
   background: #756157;
   border-radius: 4px;
@@ -285,7 +295,7 @@ navigation {
 
 .navigation-button:default {
   color: #FFFFFF;
-} 
+}
 
 /* ------- main ------- */
 
@@ -299,7 +309,7 @@ main {
   width: auto;
   color: #FFF;
   background-color: #83B3D31F;
-  display: block;  
+  display: block;
 }
 
 /* ------- hero ------- */
@@ -626,7 +636,7 @@ section.mailing.mailing-subscribe {
   background-size: cover;
   color: white;
   font-size: 30px;
-  line-height: 36px;  
+  line-height: 36px;
   text-transform: uppercase;
   color: white;
 }
@@ -709,7 +719,7 @@ footer {
   width: 1200px;
   padding: 40px 70px 30px;
   justify-content: center;
-  height: 120px;  
+  height: 120px;
   align-items: center;
   background-color: #fff;
 }
@@ -719,7 +729,7 @@ footer {
   width: 142px;
   height: 40px;
   align-items: center;
-  flex-shrink: 0;  
+  flex-shrink: 0;
 }
 
 .footer-social-item {
@@ -776,19 +786,19 @@ a[href^='tel']::before {
 .link-vk:hover {
   color: #68A2CA;
 }
-  
+
 .link-telegram {
   background-image: url("../images/icons/telegram-focus.svg");
   width: 18px;
   height: 16px;
 }
-  
+
 .link-youtube {
   background-image: url("../images/icons/youtube-focus.svg");
   width: 22px;
   height: 17px;
 }
-  
+
 .link-phone {
   font-size: 40px;
   line-height: 40px;
@@ -799,15 +809,15 @@ a[href^='tel']::before {
   color: #000;
 }
 
-.link-html {  
+.link-html {
   width: 115px;
   height: 33px;
-  flex-shrink: 0;  
+  flex-shrink: 0;
   background-image: url("../images/brand-htmlacademy.svg");
 }
 
 .modal {
-  
+
 }
 
 
@@ -824,7 +834,7 @@ a[href^='tel']::before {
   height: 412px;
   display: flex;
   padding: 70px 35px 70px 70px;
-  background: #F2F2F2;  
+  background: #F2F2F2;
   flex-direction: column;
   align-items: flex-start;
   top: 64px;
@@ -985,7 +995,7 @@ section.search {
   font: inherit;
   font-weight: 700;
   color: #ffffff;
-  
+
 }
 
 
