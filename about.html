@@ -10,41 +10,46 @@
   <body>
 
       <!-- /*    header    */ -->
-      <header class="main-header" data-test="header">
-        <h1 class="visually-hidden">Меню главной страницы</h1>
-        <nav class="main-navigation">
-          <h2 class="visually-hidden">Навигация</h2>
+      <header class="page-header" data-test="header">
+
+        <a class="page-header-logo">
+          <span class="visually-hidden" href="index.html">Логотип города Седона</span>
+        </a>
+
+        <nav class="navigation">
+
           <ul class="navigation-list">
-            <a class="navigation-logo" aria-current="page">
-              <span class="visually-hidden">Логотип города Седона</span>
-            </a>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">О Седоне</a>
+              <a class="navigation-link" href="about.html" aria-current="page">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list-user">
-            <li class="navigation-item-user">
-              <a class="navigation-link-user icon-search" href="#">
+
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link icon-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item-user">
-              <a class="navigation-link-user icon-heart" href="#">
+            <li class="navigation-item">
+              <a class="navigation-link icon-heart" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <span class="navigation-link-user-statistics">12</span>
+                <span class="navigation-user-statistics">12</span>
               </a>
             </li>
-            <li class="navigation-item-user">
-              <a class="navigation-link-user navigation-want-come-here" href="#">Хочу сюда!</a>
-            </li>
           </ul>
+
+          <a class="navigation-want-come-here">
+            <span class="" href="#" type="button">Хочу сюда!</a>
+          </a>
+
         </nav>
+
       </header>
 
     <main class="main-index">
@@ -58,7 +63,7 @@
 
         <!-- /* footer */ -->
         <footer class="main-footer" data-test="footer">
-          
+
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="link-vk" type="button" href="https://vk.com/htmlacademy">
@@ -76,13 +81,13 @@
               </a>
             </li>
           </ul>
-          
+
           <address class="item-phone" >
             <a class="link-phone" href="tel:+7(812)812-12-12">
               <span>+7(812)812-12-12</span>
             </a>
           </address>
-          
+
           <a class="link-html" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Перейти в HTML Academy</span>
           </a>
@@ -90,7 +95,7 @@
         </footer>
 
   </body>
-  
+
 </html>
 
 

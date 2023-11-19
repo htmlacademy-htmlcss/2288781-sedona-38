@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> каталог гостиниц в Седоне</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" alt="Фавиконка сайта Седоны." sizes="32x32" type="image/png">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+  </head>
+
+  <body>
+    <div class="page-container">
+
+      <!-- -------header------- -->
+      <header class="page-header" data-test="header">
+        <a class="page-header-logo" aria-current="page">
+          <span class="visually-hidden">Логотип города Седона</span>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link icon-search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link icon-heart" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="navigation-user-statistics">12</span>
+              </a>
+            </li>
+          </ul>
+          <a class="page-header-want-come-here">
+            <span class="" href="#">Хочу сюда!</a>
+          </a>
+        </nav>
+      </header>
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icons/favikon.png" alt="Фавиконка сайта Седоны." sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
     <title>HTML Academy: Седона -> разработчик Арефьева Оксана -> список гостиниц в Седоне</title>
   </head>
 
@@ -15,48 +67,53 @@
     <div class="page-container">
 
       <!-- /*    header    */ -->
-      <header class="main-header" data-test="header">
-        <h1 class="visually-hidden">Меню главной страницы</h1>
-        <nav class="main-navigation">
-          <h2 class="visually-hidden">Навигация</h2>
+      <header class="page-header" data-test="header">
+
+        <a class="page-header-logo">
+          <span class="visually-hidden" href="index.html">Логотип города Седона</span>
+        </a>
+
+        <nav class="navigation">
+
           <ul class="navigation-list">
-            <a class="navigation-logo" href="index.html">
-              <img src="images/brand-sedona.svg" role="img" width="140" height="70" type="image/svg+xml" aria-label="Логотип города Седона">
-            </a>
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" aria-current="page" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list-user">
-            <li class="navigation-item-user">
-              <a class="navigation-link-user icon-search" href="#">
+
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link icon-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item-user">
-              <a class="navigation-link-user icon-heart" href="#">
+            <li class="navigation-item">
+              <a class="navigation-link icon-heart" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <span class="navigation-link-user-statistics">12</span>
+                <span class="navigation-user-statistics">12</span>
               </a>
             </li>
-            <li class="navigation-item-user">
-              <a class="navigation-link-user navigation-want-come-here" href="#">Хочу сюда!</a>
-            </li>
           </ul>
+
+          <a class="navigation-want-come-here">
+            <span class="" href="#" type="button">Хочу сюда!</a>
+          </a>
+
         </nav>
+
       </header>
 
       <!-- /* ------- main ------- */ -->
       <main class="main-inner">
 
       <h1 class="main-inner-titul visually-hidden">Cайт поиска отелей в городе Седоне</h1>
-      
+
       <div class="main-inner-search"></div>
 
         <!-- Первая секция - search -->
@@ -74,7 +131,7 @@
               </button>
               <a class="breadcrumbs-link" aria-current="page" type="button">
                 <span>Гостиницы</span>
-              </a>              
+              </a>
             </li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
@@ -89,7 +146,7 @@
                       type="checkbox"
                       id="swimming-pool"
                       name="control-filter"
-                      checked>                    
+                      checked>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -99,7 +156,7 @@
                       type="checkbox"
                       id="parking-space"
                       name="control-filter"
-                      checked>                 
+                      checked>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -108,7 +165,7 @@
                     <input
                       type="checkbox"
                       id="wi-fi"
-                      name="control-filter">                    
+                      name="control-filter">
                   </label>
                 </li>
               </ul>
@@ -119,22 +176,22 @@
                 <li class="catalog-filter-item">
                   <label class="control" for="product-group">
                     Гостиница
-                    <input                      
+                    <input
                       type="radio"
                       id="product-group"
                       name="control-filter"
                       value="hotel"
-                      checked>                    
+                      checked>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="product-group">
                     Мотель
-                    <input                      
+                    <input
                       type="radio"
                       id="product-group"
                       name="control-filter"
-                      value="motel">                    
+                      value="motel">
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -144,7 +201,7 @@
                       type="radio"
                       id="product-group"
                       name="control-filter"
-                      value="apartments">                    
+                      value="apartments">
                   </label>
                 </li>
               </ul>
@@ -173,7 +230,7 @@
                 <input
                   type="range"
                   id="range-min"
-                  name="price-range-min"               
+                  name="price-range-min"
                   min="0"
                   max="9000"
                   value="5000"
@@ -236,7 +293,7 @@
           </div>
 
           <article class="catalog-hotels">
-          
+
             <div class="hotel-cards">
               <ul class="hotel-cards-list">
                 <li class="hotel-cards-item">
@@ -245,7 +302,7 @@
                     </a>
                     <a class="hotel-cards-subtitul" tabindex="-1">
                       <h3>Amara Resort & Spa</h3>
-                    </a>                    
+                    </a>
                     <p class="hotel-cards-text">Гостиница</p>
                     <p class="hotel-cards-price">От 4000 ₽</p>
                     <a class="hotel-cards-more-detailed" href="#" tabindex="-1">Подробнее</a>
@@ -255,7 +312,7 @@
                     </p>
                     <a class="hotel-cards-rating">Рейтинг: 8.5</a>
                 </li>
-                
+
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
                     <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Гостиница Villas-at-Poco-Diablo - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
@@ -286,14 +343,14 @@
                     <input
                       type="submit"
                       id="rating"
-                      name="hotel-cards-rating"                   
+                      name="hotel-cards-rating"
                       value="Рейтинг: 9.2">
                   </a>
                 </li>
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
                     <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Гостиница Desert Quail Inn - ночное небо у скалы в окрестностях Седоны." type="image/jpg">
-                    
+
                     <h4 class="hotel-cards-subtitul">Desert Quail Inn</h4>
                   </a>
                   <p class="hotel-cards-text">Гостиница</p>
@@ -317,7 +374,7 @@
                   <p class="stars-4">
                     <span class="visually-hidden">Трехзвездочный отель</span>
                   </p>
-                  <a for="rating"> 
+                  <a for="rating">
                     <input
                       type="submit"
                       id="rating"
@@ -420,7 +477,7 @@
 
         <!-- /* footer */ -->
         <footer class="main-footer" data-test="footer">
-          
+
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="link-vk" type="button" href="https://vk.com/htmlacademy">
@@ -438,12 +495,12 @@
               </a>
             </li>
           </ul>
-          
+
           <address class="item-phone" >
             <a class="link-phone" href="tel:+7(812)812-12-12">
             </a>
           </address>
-          
+
           <a class="link-html" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Перейти в HTML Academy</span>
           </a>
